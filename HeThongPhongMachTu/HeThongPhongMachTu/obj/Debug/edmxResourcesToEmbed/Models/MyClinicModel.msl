@@ -97,6 +97,7 @@
     <EntitySetMapping Name="NhanViens">
       <EntityTypeMapping TypeName="MyClinicModel.NhanVien">
         <MappingFragment StoreEntitySet="NhanVien">
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
           <ScalarProperty Name="MaNV" ColumnName="MaNV" />
           <ScalarProperty Name="HoTen" ColumnName="HoTen" />
           <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />

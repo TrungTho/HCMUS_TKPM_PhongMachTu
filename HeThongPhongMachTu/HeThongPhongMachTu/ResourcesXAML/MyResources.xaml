@@ -4,5 +4,6 @@
                     xmlns:local="clr-namespace:HeThongPhongMachTu.ResourcesXAML">
 
     <viewmodel:MainViewModel x:Key="MainVM"></viewmodel:MainViewModel>
+    <viewmodel:DangNhapViewModel x:Key="DangNhapVM"></viewmodel:DangNhapViewModel>
     
 </ResourceDictionary>

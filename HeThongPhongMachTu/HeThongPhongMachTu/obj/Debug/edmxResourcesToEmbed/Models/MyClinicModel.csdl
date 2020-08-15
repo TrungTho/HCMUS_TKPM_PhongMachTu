@@ -121,6 +121,7 @@
     <NavigationProperty Name="PhieuKhams" Relationship="Self.FK_PhieuKham_NhanVien" FromRole="NhanVien" ToRole="PhieuKham" />
     <NavigationProperty Name="PhieuNhapThuocs" Relationship="Self.FK_PhieuNhapThuoc_NhanVien" FromRole="NhanVien" ToRole="PhieuNhapThuoc" />
     <NavigationProperty Name="PhieuThuChis" Relationship="Self.FK_PhieuThuChi_NhanVien" FromRole="NhanVien" ToRole="PhieuThuChi" />
+    <Property Name="HinhAnh" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="PhieuKham">
     <Key>
