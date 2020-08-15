@@ -7,17 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HeThongPhongMachTu
+namespace HeThongPhongMachTu.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class QuyDinh
+    public partial class CT_ThongKe
     {
-        public string MaQD { get; set; }
-        public string TenQD { get; set; }
-        public string KieuGiaTri { get; set; }
-        public string GiaTriLonNhat { get; set; }
-        public string GiaTriNhoNhat { get; set; }
+        public int ID { get; set; }
+        public int TongThu { get; set; }
+        public int TongChi { get; set; }
+        public int LuotKham { get; set; }
+        public int SLThuocNhap { get; set; }
+        public string LoaiThoiGian { get; set; }
+        public System.DateTime NgayBatDau { get; set; }
+        public System.DateTime NgayKetThuc { get; set; }
     }
 }

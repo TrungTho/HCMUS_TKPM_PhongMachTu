@@ -7,20 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HeThongPhongMachTu
+namespace HeThongPhongMachTu.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class CT_DanhSachKham
+    public partial class sysdiagram
     {
-        public int STT { get; set; }
-        public int MaDS { get; set; }
-        public string MaBN { get; set; }
-        public System.TimeSpan ThoiGian { get; set; }
-        public string MaNV { get; set; }
-        public bool TrangThai { get; set; }
-    
-        public virtual BenhNhan BenhNhan { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

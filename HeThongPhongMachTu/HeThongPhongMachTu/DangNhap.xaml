@@ -8,6 +8,7 @@
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" x:Class="HeThongPhongMachTu.DangNhap"
         mc:Ignorable="d"
         Title="Đăng nhập" Height="300" Width="400"
+        WindowStartupLocation="CenterScreen"
     ResizeMode="NoResize"
     >
     <Grid>

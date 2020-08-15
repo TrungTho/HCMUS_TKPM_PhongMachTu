@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HeThongPhongMachTu
+namespace HeThongPhongMachTu.Models
 {
     using System;
     using System.Collections.Generic;
@@ -37,6 +37,7 @@ namespace HeThongPhongMachTu
         public string Password { get; set; }
         public int MucLuong { get; set; }
         public string TrangThai { get; set; }
+        public byte[] HinhAnh { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DanhSachKham> DanhSachKhams { get; set; }

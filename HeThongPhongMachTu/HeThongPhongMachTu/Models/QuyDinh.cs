@@ -7,19 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HeThongPhongMachTu
+namespace HeThongPhongMachTu.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class PhieuNhapThuoc
+    public partial class QuyDinh
     {
-        public string MaThuoc { get; set; }
-        public string MaNV { get; set; }
-        public System.DateTime NgayNhap { get; set; }
-        public int SoLuongNhap { get; set; }
-    
-        public virtual NhanVien NhanVien { get; set; }
-        public virtual Thuoc Thuoc { get; set; }
+        public string MaQD { get; set; }
+        public string TenQD { get; set; }
+        public string KieuGiaTri { get; set; }
+        public string GiaTriLonNhat { get; set; }
+        public string GiaTriNhoNhat { get; set; }
     }
 }

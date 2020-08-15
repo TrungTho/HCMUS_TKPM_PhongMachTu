@@ -90,74 +90,75 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BenhNhan.cs">
+    <Compile Include="Models\BenhNhan.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ChiDinhDungThuoc.cs">
+    <Compile Include="Models\ChiDinhDungThuoc.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="CT_DanhSachKham.cs">
+    <Compile Include="Models\CT_DanhSachKham.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="CT_ThongKe.cs">
+    <Compile Include="Models\CT_ThongKe.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DangNhap.xaml.cs">
       <DependentUpon>DangNhap.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DanhSachKham.cs">
+    <Compile Include="Models\DanhSachKham.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DonViThuoc.cs">
+    <Compile Include="Models\DataProvider.cs" />
+    <Compile Include="Models\DonViThuoc.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="HoaDon.cs">
+    <Compile Include="Models\HoaDon.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="LogHeThong.cs">
+    <Compile Include="Models\LogHeThong.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MyClinicModel.Context.cs">
+    <Compile Include="Models\MyClinicModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MyClinicModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="MyClinicModel.cs">
+    <Compile Include="Models\MyClinicModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="MyClinicModel.Designer.cs">
+    <Compile Include="Models\MyClinicModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MyClinicModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="NhanVien.cs">
+    <Compile Include="Models\NhanVien.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="PhieuKham.cs">
+    <Compile Include="Models\PhieuKham.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="PhieuNhapThuoc.cs">
+    <Compile Include="Models\PhieuNhapThuoc.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="PhieuThuChi.cs">
+    <Compile Include="Models\PhieuThuChi.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="QuyDinh.cs">
+    <Compile Include="Models\QuyDinh.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="SoKhamBenh.cs">
+    <Compile Include="Models\SoKhamBenh.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagram.cs">
+    <Compile Include="Models\sysdiagram.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Thuoc.cs">
+    <Compile Include="Models\Thuoc.cs">
       <DependentUpon>MyClinicModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\BaseViewModel.cs" />
@@ -194,11 +195,11 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="App.config" />
-    <EntityDeploy Include="MyClinicModel.edmx">
+    <EntityDeploy Include="Models\MyClinicModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>MyClinicModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="MyClinicModel.edmx.diagram">
+    <None Include="Models\MyClinicModel.edmx.diagram">
       <DependentUpon>MyClinicModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -209,12 +210,12 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MyClinicModel.Context.tt">
+    <Content Include="Models\MyClinicModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MyClinicModel.edmx</DependentUpon>
       <LastGenOutput>MyClinicModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="MyClinicModel.tt">
+    <Content Include="Models\MyClinicModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MyClinicModel.edmx</DependentUpon>
       <LastGenOutput>MyClinicModel.cs</LastGenOutput>
