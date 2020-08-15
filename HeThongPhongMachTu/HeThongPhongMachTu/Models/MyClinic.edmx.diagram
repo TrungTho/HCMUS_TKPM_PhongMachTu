@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aecdd4559e1742c5b06418e31a883add" Name="Diagram1">
+        <EntityTypeShape EntityType="MyClinicModel.BenhNhan" Width="1.5" PointX="1.5" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.ChiDinhDungThuoc" Width="1.5" PointX="8.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.CT_DanhSachKham" Width="1.5" PointX="3.75" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.CT_ThongKe" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.DanhSachKham" Width="1.5" PointX="1.5" PointY="28.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.DonViThuoc" Width="1.5" PointX="1.5" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.HoaDon" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.LogHeThong" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.NhanVien" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.PhieuKham" Width="1.5" PointX="6" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.PhieuNhapThuoc" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.PhieuThuChi" Width="1.5" PointX="3" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.QuyDinh" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.SoKhamBenh" Width="1.5" PointX="0.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.sysdiagram" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.Thuoc" Width="1.5" PointX="3.75" PointY="1.875" IsExpanded="true" />
+        <AssociationConnector Association="MyClinicModel.FK_CT_DanhSachKham_BenhNhan" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_SoKhamBenh_BenhNhan" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_ChiDinhDungThuoc_PhieuKham" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_ChiDinhDungThuoc_Thuoc" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_CT_DanhSachKham_DanhSachKham" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_Thuoc_DonViThuoc" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_HoaDon_BenhNhan" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_HoaDon_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_HoaDon_NhanVien1" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_LogHeThong_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_PhieuKham_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_PhieuNhapThuoc_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_PhieuThuChi_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_PhieuKham_BenhNhan" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_PhieuNhapThuoc_Thuoc" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

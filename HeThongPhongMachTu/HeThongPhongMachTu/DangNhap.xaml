@@ -10,7 +10,6 @@
         Title="Đăng nhập" Height="300" Width="400"
         WindowStartupLocation="CenterScreen"
     ResizeMode="NoResize"
-    WindowStyle="None"
     DataContext="{StaticResource DangNhapVM}"
     >
     <Grid>

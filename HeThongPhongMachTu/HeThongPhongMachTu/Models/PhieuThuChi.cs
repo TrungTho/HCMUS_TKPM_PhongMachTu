@@ -20,6 +20,7 @@ namespace HeThongPhongMachTu.Models
         public int LoaiPhieu { get; set; }
         public int GiaTri { get; set; }
         public string NoiDung { get; set; }
+        public bool TinhTrang { get; set; }
     
         public virtual NhanVien NhanVien { get; set; }
     }

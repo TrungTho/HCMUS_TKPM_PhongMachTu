@@ -90,76 +90,76 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Models\BenhNhan.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ChiDinhDungThuoc.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CT_DanhSachKham.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CT_ThongKe.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="DangNhap.xaml.cs">
       <DependentUpon>DangNhap.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\BenhNhan.cs">
+      <DependentUpon>MyClinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiDinhDungThuoc.cs">
+      <DependentUpon>MyClinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CT_DanhSachKham.cs">
+      <DependentUpon>MyClinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CT_ThongKe.cs">
+      <DependentUpon>MyClinic.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\DanhSachKham.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
+      <DependentUpon>MyClinic.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DataProvider.cs" />
-    <Compile Include="Models\DonViThuoc.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\HoaDon.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\LogHeThong.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Models\MyClinicModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MyClinicModel.Context.tt</DependentUpon>
+    <Compile Include="Models\DonViThuoc.cs">
+      <DependentUpon>MyClinic.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\MyClinicModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
+    <Compile Include="Models\HoaDon.cs">
+      <DependentUpon>MyClinic.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\MyClinicModel.Designer.cs">
+    <Compile Include="Models\LogHeThong.cs">
+      <DependentUpon>MyClinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyClinic.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MyClinicModel.edmx</DependentUpon>
+      <DependentUpon>MyClinic.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyClinic.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyClinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyClinic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyClinic.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\NhanVien.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
+      <DependentUpon>MyClinic.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PhieuKham.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
+      <DependentUpon>MyClinic.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PhieuNhapThuoc.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
+      <DependentUpon>MyClinic.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PhieuThuChi.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
+      <DependentUpon>MyClinic.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\QuyDinh.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
+      <DependentUpon>MyClinic.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\SoKhamBenh.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
+      <DependentUpon>MyClinic.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
+      <DependentUpon>MyClinic.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Thuoc.cs">
-      <DependentUpon>MyClinicModel.tt</DependentUpon>
+      <DependentUpon>MyClinic.tt</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\DangNhapViewModel.cs" />
@@ -196,12 +196,12 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="App.config" />
-    <EntityDeploy Include="Models\MyClinicModel.edmx">
+    <EntityDeploy Include="Models\MyClinic.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MyClinicModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>MyClinic.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\MyClinicModel.edmx.diagram">
-      <DependentUpon>MyClinicModel.edmx</DependentUpon>
+    <None Include="Models\MyClinic.edmx.diagram">
+      <DependentUpon>MyClinic.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -211,19 +211,184 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Models\MyClinicModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MyClinicModel.edmx</DependentUpon>
-      <LastGenOutput>MyClinicModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\MyClinicModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MyClinicModel.edmx</DependentUpon>
-      <LastGenOutput>MyClinicModel.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <None Include="Images\account_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\account_white.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\bacsi.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\bill_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\bill_white.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\calendar_gray.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\calendar_white.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\cancelicon_white.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\Capture.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\changepasswordicon_white.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\commandicon.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\confirmicon_white.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\delicon.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\drug.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\drug_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\duocsi.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\editicon.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\eyeclose_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\eyeopen_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\findicon_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\historyicon_gray.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\historyicon_white.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\historynvoice_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\historynvoice_white.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\inputdrug_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\inputdrug_white.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\invoice_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\invoice_white.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\list.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\listaccount_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\listaccount_white.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\medicalbill_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\medicalbill_white.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\newaccount_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\newaccount_white.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\newicon.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\newmedicalbill_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\newmedicalbill_white.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\payment.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\printicon_white.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\rules_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\rules_white.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\saveicon_white.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\statitic.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\statitic_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\stethoscope_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\stethoscope_white.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\temp.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\thungan.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\tieptan.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\todayicon_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\todayicon_white.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\warehouse_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\warehouse_white.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\windows-minimize-icon-24.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Models\MyClinic.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MyClinic.edmx</DependentUpon>
+      <LastGenOutput>MyClinic.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\MyClinic.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MyClinic.edmx</DependentUpon>
+      <LastGenOutput>MyClinic.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

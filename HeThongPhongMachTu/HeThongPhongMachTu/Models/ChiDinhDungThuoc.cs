@@ -18,7 +18,6 @@ namespace HeThongPhongMachTu.Models
         public string MaThuoc { get; set; }
         public int SoLuong { get; set; }
         public string MaDV { get; set; }
-        public int LieuLuong { get; set; }
         public string GhiChu { get; set; }
     
         public virtual PhieuKham PhieuKham { get; set; }

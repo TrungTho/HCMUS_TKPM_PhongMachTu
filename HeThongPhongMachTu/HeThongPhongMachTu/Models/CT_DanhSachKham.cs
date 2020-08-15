@@ -17,10 +17,11 @@ namespace HeThongPhongMachTu.Models
         public int STT { get; set; }
         public int MaDS { get; set; }
         public string MaBN { get; set; }
-        public System.TimeSpan ThoiGian { get; set; }
+        public System.DateTime ThoiGian { get; set; }
         public string MaNV { get; set; }
         public bool TrangThai { get; set; }
     
         public virtual BenhNhan BenhNhan { get; set; }
+        public virtual DanhSachKham DanhSachKham { get; set; }
     }
 }

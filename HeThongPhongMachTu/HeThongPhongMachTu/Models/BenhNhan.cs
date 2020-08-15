@@ -27,6 +27,9 @@ namespace HeThongPhongMachTu.Models
         public string CMND { get; set; }
         public string SDT { get; set; }
         public string SDTNguoiThan { get; set; }
+        public bool GioiTinh { get; set; }
+        public int CanNang { get; set; }
+        public string NgheNghiep { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CT_DanhSachKham> CT_DanhSachKham { get; set; }

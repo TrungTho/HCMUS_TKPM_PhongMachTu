@@ -17,7 +17,6 @@ namespace HeThongPhongMachTu.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NhanVien()
         {
-            this.DanhSachKhams = new HashSet<DanhSachKham>();
             this.HoaDons = new HashSet<HoaDon>();
             this.HoaDons1 = new HashSet<HoaDon>();
             this.LogHeThongs = new HashSet<LogHeThong>();
@@ -32,15 +31,14 @@ namespace HeThongPhongMachTu.Models
         public bool GioiTinh { get; set; }
         public string DiaChi { get; set; }
         public string CMND { get; set; }
+        public string SDT { get; set; }
+        public string Email { get; set; }
         public string LoaiNhanVien { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
         public int MucLuong { get; set; }
         public string TrangThai { get; set; }
-        public byte[] HinhAnh { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DanhSachKham> DanhSachKhams { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HoaDon> HoaDons { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

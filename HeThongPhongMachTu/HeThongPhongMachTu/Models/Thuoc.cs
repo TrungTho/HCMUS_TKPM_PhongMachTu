@@ -26,8 +26,8 @@ namespace HeThongPhongMachTu.Models
         public string MaDV { get; set; }
         public int TongSoLuong { get; set; }
         public int DonGia { get; set; }
-        public string LoaiThuoc { get; set; }
         public string TinhTrang { get; set; }
+        public string ThongTin { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiDinhDungThuoc> ChiDinhDungThuocs { get; set; }

@@ -14,11 +14,17 @@ namespace HeThongPhongMachTu.Models
     
     public partial class DanhSachKham
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public DanhSachKham()
+        {
+            this.CT_DanhSachKham = new HashSet<CT_DanhSachKham>();
+        }
+    
         public int MaDS { get; set; }
         public System.DateTime NgayThang { get; set; }
         public int SoLuong { get; set; }
-        public string MaNV { get; set; }
     
-        public virtual NhanVien NhanVien { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CT_DanhSachKham> CT_DanhSachKham { get; set; }
     }
 }

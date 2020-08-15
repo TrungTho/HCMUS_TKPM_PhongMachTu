@@ -15,13 +15,13 @@ namespace HeThongPhongMachTu.Models
     public partial class HoaDon
     {
         public string MaHD { get; set; }
+        public string MaBN { get; set; }
         public System.DateTime NgayLap { get; set; }
         public int TongTienThanhToan { get; set; }
         public bool TrangThaiThanhToan { get; set; }
         public bool TrangThaiGiaoThuoc { get; set; }
         public string MaNVThanhToan { get; set; }
         public string MaNVGiaoThuoc { get; set; }
-        public string MaBN { get; set; }
     
         public virtual SoKhamBenh SoKhamBenh { get; set; }
         public virtual NhanVien NhanVien { get; set; }
