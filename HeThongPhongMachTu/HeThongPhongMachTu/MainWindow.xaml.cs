@@ -24,5 +24,7 @@ namespace HeThongPhongMachTu
         {
             InitializeComponent();
         }
+
+
     }
 }

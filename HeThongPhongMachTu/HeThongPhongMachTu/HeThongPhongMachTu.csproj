@@ -42,6 +42,7 @@
     <Reference Include="DevExpress.Data.Desktop.v20.1" />
     <Reference Include="DevExpress.Data.v20.1" />
     <Reference Include="DevExpress.Printing.v20.1.Core" />
+    <Reference Include="DevExpress.Xpf.Controls.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpf.Core.v20.1" />
     <Reference Include="DevExpress.Xpf.Themes.Office2019Colorful.v20.1" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -59,6 +60,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
@@ -69,6 +71,8 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -191,6 +195,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Properties\Licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -214,171 +219,171 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\account_gray.png">
+    <Resource Include="Images\account_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\account_white.png">
+    </Resource>
+    <Resource Include="Images\account_white.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\bacsi.PNG">
+    </Resource>
+    <Resource Include="Images\bacsi.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\bill_gray.png">
+    </Resource>
+    <Resource Include="Images\bill_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\bill_white.PNG">
+    </Resource>
+    <Resource Include="Images\bill_white.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\calendar_gray.PNG">
+    </Resource>
+    <Resource Include="Images\calendar_gray.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\calendar_white.PNG">
+    </Resource>
+    <Resource Include="Images\calendar_white.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\cancelicon_white.PNG">
+    </Resource>
+    <Resource Include="Images\cancelicon_white.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Capture.PNG">
+    </Resource>
+    <Resource Include="Images\Capture.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\changepasswordicon_white.PNG">
+    </Resource>
+    <Resource Include="Images\changepasswordicon_white.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\commandicon.PNG">
+    </Resource>
+    <Resource Include="Images\commandicon.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\confirmicon_white.PNG">
+    </Resource>
+    <Resource Include="Images\confirmicon_white.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\delicon.PNG">
+    </Resource>
+    <Resource Include="Images\delicon.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\drug.PNG">
+    </Resource>
+    <Resource Include="Images\drug.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\drug_gray.png">
+    </Resource>
+    <Resource Include="Images\drug_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\duocsi.PNG">
+    </Resource>
+    <Resource Include="Images\duocsi.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\editicon.PNG">
+    </Resource>
+    <Resource Include="Images\editicon.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\eyeclose_gray.png">
+    </Resource>
+    <Resource Include="Images\eyeclose_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\eyeopen_gray.png">
+    </Resource>
+    <Resource Include="Images\eyeopen_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\findicon_gray.png">
+    </Resource>
+    <Resource Include="Images\findicon_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\historyicon_gray.PNG">
+    </Resource>
+    <Resource Include="Images\historyicon_gray.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\historyicon_white.png">
+    </Resource>
+    <Resource Include="Images\historyicon_white.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\historynvoice_gray.png">
+    </Resource>
+    <Resource Include="Images\historynvoice_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\historynvoice_white.png">
+    </Resource>
+    <Resource Include="Images\historynvoice_white.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\inputdrug_gray.png">
+    </Resource>
+    <Resource Include="Images\inputdrug_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\inputdrug_white.PNG">
+    </Resource>
+    <Resource Include="Images\inputdrug_white.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\invoice_gray.png">
+    </Resource>
+    <Resource Include="Images\invoice_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\invoice_white.PNG">
+    </Resource>
+    <Resource Include="Images\invoice_white.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\list.PNG">
+    </Resource>
+    <Resource Include="Images\list.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\listaccount_gray.png">
+    </Resource>
+    <Resource Include="Images\listaccount_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\listaccount_white.PNG">
+    </Resource>
+    <Resource Include="Images\listaccount_white.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\medicalbill_gray.png">
+    </Resource>
+    <Resource Include="Images\medicalbill_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\medicalbill_white.PNG">
+    </Resource>
+    <Resource Include="Images\medicalbill_white.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\newaccount_gray.png">
+    </Resource>
+    <Resource Include="Images\newaccount_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\newaccount_white.png">
+    </Resource>
+    <Resource Include="Images\newaccount_white.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\newicon.PNG">
+    </Resource>
+    <Resource Include="Images\newicon.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\newmedicalbill_gray.png">
+    </Resource>
+    <Resource Include="Images\newmedicalbill_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\newmedicalbill_white.png">
+    </Resource>
+    <Resource Include="Images\newmedicalbill_white.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\payment.PNG">
+    </Resource>
+    <Resource Include="Images\payment.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\printicon_white.PNG">
+    </Resource>
+    <Resource Include="Images\printicon_white.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\rules_gray.png">
+    </Resource>
+    <Resource Include="Images\rules_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\rules_white.PNG">
+    </Resource>
+    <Resource Include="Images\rules_white.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\saveicon_white.PNG">
+    </Resource>
+    <Resource Include="Images\saveicon_white.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\statitic.PNG">
+    </Resource>
+    <Resource Include="Images\statitic.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\statitic_gray.png">
+    </Resource>
+    <Resource Include="Images\statitic_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\stethoscope_gray.png">
+    </Resource>
+    <Resource Include="Images\stethoscope_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\stethoscope_white.PNG">
+    </Resource>
+    <Resource Include="Images\stethoscope_white.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\temp.PNG">
+    </Resource>
+    <Resource Include="Images\temp.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\thungan.PNG">
+    </Resource>
+    <Resource Include="Images\thungan.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\tieptan.PNG">
+    </Resource>
+    <Resource Include="Images\tieptan.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\todayicon_gray.png">
+    </Resource>
+    <Resource Include="Images\todayicon_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\todayicon_white.png">
+    </Resource>
+    <Resource Include="Images\todayicon_white.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\warehouse_gray.png">
+    </Resource>
+    <Resource Include="Images\warehouse_gray.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\warehouse_white.PNG">
+    </Resource>
+    <Resource Include="Images\warehouse_white.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\windows-minimize-icon-24.jpg">
+    </Resource>
+    <Resource Include="Images\windows-minimize-icon-24.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
     <Content Include="Models\MyClinic.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MyClinic.edmx</DependentUpon>

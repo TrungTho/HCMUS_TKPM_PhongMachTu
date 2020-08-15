@@ -8,8 +8,8 @@ namespace HeThongPhongMachTu.ViewModels
     {
         public MainViewModel()
         {
-            var screen = new DangNhap();
-            screen.ShowDialog();
+            //var screen = new DangNhap();
+            //screen.ShowDialog();
         }
     }
 }
