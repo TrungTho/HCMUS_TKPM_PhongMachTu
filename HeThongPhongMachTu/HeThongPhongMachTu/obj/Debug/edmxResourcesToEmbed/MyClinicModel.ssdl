@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyClinicModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BenhNhan">
+    <Key>
+      <PropertyRef Name="MaBN" />
+    </Key>
+    <Property Name="MaBN" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NgaySinh" Type="date" Nullable="false" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="CMND" Type="text" Nullable="false" />
+    <Property Name="SDT" Type="text" Nullable="false" />
+    <Property Name="SDTNguoiThan" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ChiDinhDungThuoc">
+    <Key>
+      <PropertyRef Name="MaPK" />
+      <PropertyRef Name="MaThuoc" />
+    </Key>
+    <Property Name="MaPK" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaThuoc" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="SoLuong" Type="int" Nullable="false" />
+    <Property Name="MaDV" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="LieuLuong" Type="int" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CT_DanhSachKham">
+    <Key>
+      <PropertyRef Name="STT" />
+      <PropertyRef Name="MaDS" />
+      <PropertyRef Name="MaBN" />
+    </Key>
+    <Property Name="STT" Type="int" Nullable="false" />
+    <Property Name="MaDS" Type="int" Nullable="false" />
+    <Property Name="MaBN" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="ThoiGian" Type="time" Precision="7" Nullable="false" />
+    <Property Name="MaNV" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="TrangThai" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CT_ThongKe">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TongThu" Type="int" Nullable="false" />
+    <Property Name="TongChi" Type="int" Nullable="false" />
+    <Property Name="LuotKham" Type="int" Nullable="false" />
+    <Property Name="SLThuocNhap" Type="int" Nullable="false" />
+    <Property Name="LoaiThoiGian" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NgayBatDau" Type="date" Nullable="false" />
+    <Property Name="NgayKetThuc" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DanhSachKham">
+    <Key>
+      <PropertyRef Name="MaDS" />
+    </Key>
+    <Property Name="MaDS" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NgayThang" Type="date" Nullable="false" />
+    <Property Name="SoLuong" Type="int" Nullable="false" />
+    <Property Name="MaNV" Type="nchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DonViThuoc">
+    <Key>
+      <PropertyRef Name="MaDV" />
+    </Key>
+    <Property Name="MaDV" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="DienGiai" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HoaDon">
+    <Key>
+      <PropertyRef Name="MaHD" />
+    </Key>
+    <Property Name="MaHD" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="NgayLap" Type="date" Nullable="false" />
+    <Property Name="TongTienThanhToan" Type="int" Nullable="false" />
+    <Property Name="TrangThaiThanhToan" Type="bit" Nullable="false" />
+    <Property Name="TrangThaiGiaoThuoc" Type="bit" Nullable="false" />
+    <Property Name="MaNVThanhToan" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaNVGiaoThuoc" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaBN" Type="nchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LogHeThong">
+    <Key>
+      <PropertyRef Name="ThoiGian" />
+    </Key>
+    <Property Name="ThoiGian" Type="datetime" Nullable="false" />
+    <Property Name="MaNV" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaDoiTuong" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="MaNV" />
+    </Key>
+    <Property Name="MaNV" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NgaySinh" Type="date" Nullable="false" />
+    <Property Name="GioiTinh" Type="bit" Nullable="false" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="CMND" Type="text" Nullable="false" />
+    <Property Name="LoaiNhanVien" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="text" Nullable="false" />
+    <Property Name="Password" Type="text" Nullable="false" />
+    <Property Name="MucLuong" Type="int" Nullable="false" />
+    <Property Name="TrangThai" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PhieuKham">
+    <Key>
+      <PropertyRef Name="MaPK" />
+    </Key>
+    <Property Name="MaPK" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaBN" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaNV" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="NgayLap" Type="date" Nullable="false" />
+    <Property Name="ChanDoan" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PhieuNhapThuoc">
+    <Key>
+      <PropertyRef Name="MaThuoc" />
+      <PropertyRef Name="MaNV" />
+      <PropertyRef Name="NgayNhap" />
+    </Key>
+    <Property Name="MaThuoc" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaNV" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="NgayNhap" Type="date" Nullable="false" />
+    <Property Name="SoLuongNhap" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PhieuThuChi">
+    <Key>
+      <PropertyRef Name="MaPhieu" />
+    </Key>
+    <Property Name="MaPhieu" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaNV" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="NgayLap" Type="date" Nullable="false" />
+    <Property Name="LoaiPhieu" Type="int" Nullable="false" />
+    <Property Name="GiaTri" Type="int" Nullable="false" />
+    <Property Name="NoiDung" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QuyDinh">
+    <Key>
+      <PropertyRef Name="MaQD" />
+    </Key>
+    <Property Name="MaQD" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="TenQD" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KieuGiaTri" Type="text" Nullable="false" />
+    <Property Name="GiaTriLonNhat" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GiaTriNhoNhat" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SoKhamBenh">
+    <Key>
+      <PropertyRef Name="MaBN" />
+    </Key>
+    <Property Name="MaBN" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="NgayLap" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Thuoc">
+    <Key>
+      <PropertyRef Name="MaThuoc" />
+    </Key>
+    <Property Name="MaThuoc" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="TenThuoc" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MaDV" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="TongSoLuong" Type="int" Nullable="false" />
+    <Property Name="DonGia" Type="int" Nullable="false" />
+    <Property Name="LoaiThuoc" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TinhTrang" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_ChiDinhDungThuoc_PhieuKham">
+    <End Role="PhieuKham" Type="Self.PhieuKham" Multiplicity="1" />
+    <End Role="ChiDinhDungThuoc" Type="Self.ChiDinhDungThuoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PhieuKham">
+        <PropertyRef Name="MaPK" />
+      </Principal>
+      <Dependent Role="ChiDinhDungThuoc">
+        <PropertyRef Name="MaPK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChiDinhDungThuoc_Thuoc">
+    <End Role="Thuoc" Type="Self.Thuoc" Multiplicity="1" />
+    <End Role="ChiDinhDungThuoc" Type="Self.ChiDinhDungThuoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Thuoc">
+        <PropertyRef Name="MaThuoc" />
+      </Principal>
+      <Dependent Role="ChiDinhDungThuoc">
+        <PropertyRef Name="MaThuoc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CT_DanhSachKham_BenhNhan">
+    <End Role="BenhNhan" Type="Self.BenhNhan" Multiplicity="1" />
+    <End Role="CT_DanhSachKham" Type="Self.CT_DanhSachKham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BenhNhan">
+        <PropertyRef Name="MaBN" />
+      </Principal>
+      <Dependent Role="CT_DanhSachKham">
+        <PropertyRef Name="MaBN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DanhSachKham_NhanVien">
+    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="1" />
+    <End Role="DanhSachKham" Type="Self.DanhSachKham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNV" />
+      </Principal>
+      <Dependent Role="DanhSachKham">
+        <PropertyRef Name="MaNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoaDon_BenhNhan">
+    <End Role="SoKhamBenh" Type="Self.SoKhamBenh" Multiplicity="1" />
+    <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SoKhamBenh">
+        <PropertyRef Name="MaBN" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="MaBN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoaDon_NhanVien">
+    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="1" />
+    <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNV" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="MaNVGiaoThuoc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoaDon_NhanVien1">
+    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="1" />
+    <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNV" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="MaNVThanhToan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LogHeThong_NhanVien">
+    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="1" />
+    <End Role="LogHeThong" Type="Self.LogHeThong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNV" />
+      </Principal>
+      <Dependent Role="LogHeThong">
+        <PropertyRef Name="MaNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhieuKham_BenhNhan">
+    <End Role="SoKhamBenh" Type="Self.SoKhamBenh" Multiplicity="1" />
+    <End Role="PhieuKham" Type="Self.PhieuKham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SoKhamBenh">
+        <PropertyRef Name="MaBN" />
+      </Principal>
+      <Dependent Role="PhieuKham">
+        <PropertyRef Name="MaBN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhieuKham_NhanVien">
+    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="1" />
+    <End Role="PhieuKham" Type="Self.PhieuKham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNV" />
+      </Principal>
+      <Dependent Role="PhieuKham">
+        <PropertyRef Name="MaBN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhieuNhapThuoc_NhanVien">
+    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="1" />
+    <End Role="PhieuNhapThuoc" Type="Self.PhieuNhapThuoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNV" />
+      </Principal>
+      <Dependent Role="PhieuNhapThuoc">
+        <PropertyRef Name="MaNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhieuNhapThuoc_Thuoc">
+    <End Role="Thuoc" Type="Self.Thuoc" Multiplicity="1" />
+    <End Role="PhieuNhapThuoc" Type="Self.PhieuNhapThuoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Thuoc">
+        <PropertyRef Name="MaThuoc" />
+      </Principal>
+      <Dependent Role="PhieuNhapThuoc">
+        <PropertyRef Name="MaThuoc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhieuThuChi_NhanVien">
+    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="1" />
+    <End Role="PhieuThuChi" Type="Self.PhieuThuChi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNV" />
+      </Principal>
+      <Dependent Role="PhieuThuChi">
+        <PropertyRef Name="MaNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SoKhamBenh_BenhNhan">
+    <End Role="BenhNhan" Type="Self.BenhNhan" Multiplicity="1" />
+    <End Role="SoKhamBenh" Type="Self.SoKhamBenh" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="BenhNhan">
+        <PropertyRef Name="MaBN" />
+      </Principal>
+      <Dependent Role="SoKhamBenh">
+        <PropertyRef Name="MaBN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Thuoc_DonViThuoc">
+    <End Role="DonViThuoc" Type="Self.DonViThuoc" Multiplicity="1" />
+    <End Role="Thuoc" Type="Self.Thuoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DonViThuoc">
+        <PropertyRef Name="MaDV" />
+      </Principal>
+      <Dependent Role="Thuoc">
+        <PropertyRef Name="MaDV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MyClinicModelStoreContainer">
+    <EntitySet Name="BenhNhan" EntityType="Self.BenhNhan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChiDinhDungThuoc" EntityType="Self.ChiDinhDungThuoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CT_DanhSachKham" EntityType="Self.CT_DanhSachKham" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CT_ThongKe" EntityType="Self.CT_ThongKe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DanhSachKham" EntityType="Self.DanhSachKham" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DonViThuoc" EntityType="Self.DonViThuoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HoaDon" EntityType="Self.HoaDon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LogHeThong" EntityType="Self.LogHeThong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NhanVien" EntityType="Self.NhanVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhieuKham" EntityType="Self.PhieuKham" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhieuNhapThuoc" EntityType="Self.PhieuNhapThuoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhieuThuChi" EntityType="Self.PhieuThuChi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuyDinh" EntityType="Self.QuyDinh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SoKhamBenh" EntityType="Self.SoKhamBenh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Thuoc" EntityType="Self.Thuoc" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ChiDinhDungThuoc_PhieuKham" Association="Self.FK_ChiDinhDungThuoc_PhieuKham">
+      <End Role="PhieuKham" EntitySet="PhieuKham" />
+      <End Role="ChiDinhDungThuoc" EntitySet="ChiDinhDungThuoc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChiDinhDungThuoc_Thuoc" Association="Self.FK_ChiDinhDungThuoc_Thuoc">
+      <End Role="Thuoc" EntitySet="Thuoc" />
+      <End Role="ChiDinhDungThuoc" EntitySet="ChiDinhDungThuoc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CT_DanhSachKham_BenhNhan" Association="Self.FK_CT_DanhSachKham_BenhNhan">
+      <End Role="BenhNhan" EntitySet="BenhNhan" />
+      <End Role="CT_DanhSachKham" EntitySet="CT_DanhSachKham" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DanhSachKham_NhanVien" Association="Self.FK_DanhSachKham_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanVien" />
+      <End Role="DanhSachKham" EntitySet="DanhSachKham" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoaDon_BenhNhan" Association="Self.FK_HoaDon_BenhNhan">
+      <End Role="SoKhamBenh" EntitySet="SoKhamBenh" />
+      <End Role="HoaDon" EntitySet="HoaDon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoaDon_NhanVien" Association="Self.FK_HoaDon_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanVien" />
+      <End Role="HoaDon" EntitySet="HoaDon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoaDon_NhanVien1" Association="Self.FK_HoaDon_NhanVien1">
+      <End Role="NhanVien" EntitySet="NhanVien" />
+      <End Role="HoaDon" EntitySet="HoaDon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LogHeThong_NhanVien" Association="Self.FK_LogHeThong_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanVien" />
+      <End Role="LogHeThong" EntitySet="LogHeThong" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhieuKham_BenhNhan" Association="Self.FK_PhieuKham_BenhNhan">
+      <End Role="SoKhamBenh" EntitySet="SoKhamBenh" />
+      <End Role="PhieuKham" EntitySet="PhieuKham" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhieuKham_NhanVien" Association="Self.FK_PhieuKham_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanVien" />
+      <End Role="PhieuKham" EntitySet="PhieuKham" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhieuNhapThuoc_NhanVien" Association="Self.FK_PhieuNhapThuoc_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanVien" />
+      <End Role="PhieuNhapThuoc" EntitySet="PhieuNhapThuoc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhieuNhapThuoc_Thuoc" Association="Self.FK_PhieuNhapThuoc_Thuoc">
+      <End Role="Thuoc" EntitySet="Thuoc" />
+      <End Role="PhieuNhapThuoc" EntitySet="PhieuNhapThuoc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhieuThuChi_NhanVien" Association="Self.FK_PhieuThuChi_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanVien" />
+      <End Role="PhieuThuChi" EntitySet="PhieuThuChi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SoKhamBenh_BenhNhan" Association="Self.FK_SoKhamBenh_BenhNhan">
+      <End Role="BenhNhan" EntitySet="BenhNhan" />
+      <End Role="SoKhamBenh" EntitySet="SoKhamBenh" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Thuoc_DonViThuoc" Association="Self.FK_Thuoc_DonViThuoc">
+      <End Role="DonViThuoc" EntitySet="DonViThuoc" />
+      <End Role="Thuoc" EntitySet="Thuoc" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
