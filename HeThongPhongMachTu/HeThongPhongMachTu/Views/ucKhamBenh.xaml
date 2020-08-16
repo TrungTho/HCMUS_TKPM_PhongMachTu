@@ -10,6 +10,11 @@
              xmlns:dxwuin="http://schemas.devexpress.com/winfx/2008/xaml/windowsui/navigation"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="Image">
+            <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
+        </Style>
+    </UserControl.Resources>
     <DockPanel LastChildFill="True">
 
         <dxnav:TileBar
@@ -46,7 +51,7 @@
                 </Grid>
             </dxwui:NavigationButton>
 
-            <dxwui:NavigationButton Height="60" Width="200" Background="#0AB06B" Padding="5">
+            <dxwui:NavigationButton Height="60" Width="200" BorderBrush="White" BorderThickness="2" Background="#0AB06B" Padding="5">
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>

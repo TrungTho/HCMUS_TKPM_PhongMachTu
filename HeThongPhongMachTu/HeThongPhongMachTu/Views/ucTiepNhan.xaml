@@ -25,7 +25,7 @@
                 </Style>
             </dxnav:TileBar.Resources>
 
-            <dxwui:NavigationButton Height="60" Width="200" 
+            <dxwui:NavigationButton Height="60" Width="200"  BorderBrush="White" BorderThickness="2"
                  Background="#0AB06B" Padding="5">
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
