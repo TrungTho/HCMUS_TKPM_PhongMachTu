@@ -126,7 +126,8 @@
         <Grid Grid.Row="1" Background="#6A6868" Margin="0">
             <DockPanel LastChildFill="False" HorizontalAlignment="Center">
                 
-                <Button Name="buttonThemBenhNhan"
+                <dxwui:NavigationButton NavigateTo="ucTiepNhan_BenhNhanMoi"
+                    Name="buttonThemBenhNhan"
                     Background="Transparent" BorderThickness="0"
                         Margin="0" Width="auto" Height="auto">
                     <Grid>
@@ -147,7 +148,7 @@
                         </Grid>
                     </Grid>
 
-                </Button>
+                </dxwui:NavigationButton>
                 
                 <Button Name="buttonSuaBenhNhan"
                     Background="Transparent" BorderThickness="0"

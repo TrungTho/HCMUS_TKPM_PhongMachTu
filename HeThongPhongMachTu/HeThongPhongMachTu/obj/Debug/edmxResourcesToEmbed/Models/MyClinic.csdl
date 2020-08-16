@@ -11,7 +11,7 @@
     <Property Name="CMND" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="SDT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="SDTNguoiThan" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="GioiTinh" Type="Boolean" Nullable="false" />
+    <Property Name="GioiTinh" Type="String" Nullable="false" />
     <Property Name="CanNang" Type="Int32" Nullable="false" />
     <Property Name="NgheNghiep" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="CT_DanhSachKham" Relationship="Self.FK_CT_DanhSachKham_BenhNhan" FromRole="BenhNhan" ToRole="CT_DanhSachKham" />

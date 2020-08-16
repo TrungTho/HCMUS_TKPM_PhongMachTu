@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="MyClinicModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="MyClinicModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="BenhNhan">
           <Key>
             <PropertyRef Name="MaBN" />
@@ -16,7 +16,7 @@
           <Property Name="CMND" Type="text" Nullable="false" />
           <Property Name="SDT" Type="text" Nullable="false" />
           <Property Name="SDTNguoiThan" Type="text" Nullable="false" />
-          <Property Name="GioiTinh" Type="bit" Nullable="false" />
+          <Property Name="GioiTinh" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="CanNang" Type="int" Nullable="false" />
           <Property Name="NgheNghiep" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
@@ -442,8 +442,7 @@
             <End Role="Thuoc" EntitySet="Thuoc" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="MyClinicModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -458,7 +457,7 @@
           <Property Name="CMND" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="SDT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="SDTNguoiThan" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="GioiTinh" Type="Boolean" Nullable="false" />
+          <Property Name="GioiTinh" Type="String" Nullable="false" />
           <Property Name="CanNang" Type="Int32" Nullable="false" />
           <Property Name="NgheNghiep" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="CT_DanhSachKham" Relationship="Self.FK_CT_DanhSachKham_BenhNhan" FromRole="BenhNhan" ToRole="CT_DanhSachKham" />

@@ -64,6 +64,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -137,6 +138,9 @@
     </Compile>
     <Compile Include="Views\ucTiepNhan.xaml.cs">
       <DependentUpon>ucTiepNhan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucTiepNhan_BenhNhanMoi.xaml.cs">
+      <DependentUpon>ucTiepNhan_BenhNhanMoi.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ucTiepNhan_DSBenhNhan.xaml.cs">
       <DependentUpon>ucTiepNhan_DSBenhNhan.xaml</DependentUpon>
@@ -303,6 +307,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ucTiepNhan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucTiepNhan_BenhNhanMoi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -516,6 +524,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\windows-minimize-icon-24.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\addicon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Content Include="Models\MyClinic.Context.tt">

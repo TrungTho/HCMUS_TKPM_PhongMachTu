@@ -27,7 +27,7 @@ namespace HeThongPhongMachTu.Models
         public string CMND { get; set; }
         public string SDT { get; set; }
         public string SDTNguoiThan { get; set; }
-        public bool GioiTinh { get; set; }
+        public string GioiTinh { get; set; }
         public int CanNang { get; set; }
         public string NgheNghiep { get; set; }
     
