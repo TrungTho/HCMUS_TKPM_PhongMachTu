@@ -4,6 +4,8 @@
     xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
     xmlns:Views="clr-namespace:HeThongPhongMachTu.Views"
     xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
+    xmlns:dxwuin="http://schemas.devexpress.com/winfx/2008/xaml/windowsui/navigation"
     x:Class="HeThongPhongMachTu.MainWindow"
     Title="MainWindow" Height="800" Width="1000">
     
@@ -16,6 +18,11 @@
         <Grid Grid.Row="0" Height="120" VerticalAlignment="Top">
             <Views:MainView Loaded="MainView_Loaded"/>
         </Grid>-->
-        <Views:ucQuanLy/>
+        <dxwui:NavigationFrame DockPanel.Dock="Bottom" AnimationType="Fade">
+            <dxmvvm:Interaction.Behaviors>
+                <dxwuin:FrameNavigationService />
+            </dxmvvm:Interaction.Behaviors>
+            <Views:ucTiepNhan></Views:ucTiepNhan>
+        </dxwui:NavigationFrame>
     </Grid>
 </dx:ThemedWindow>

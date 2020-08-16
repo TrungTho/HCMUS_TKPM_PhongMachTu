@@ -29,9 +29,8 @@
                 </Style>
             </dxnav:TileBar.Resources>
 
-            <dxnav:TileBarItem Name="tileTiepNhan" Command="{Binding SwitchToTiepNhan}"
-                               CommandParameter="{Binding ElementName=frameThanhToan}"
-                Height="70" Background="#0AB06B" Padding="5">
+            <dxwui:NavigationButton Height="60" Width="200" Opacity="0.5" NavigateTo="ucTiepNhan"
+                 Background="#0AB06B" Padding="5">
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -52,10 +51,9 @@
                     </Grid>
 
                 </Grid>
-            </dxnav:TileBarItem>
+            </dxwui:NavigationButton>
 
-            <dxnav:TileBarItem Name="tileKhamBenh"
-                Height="70" Background="#0AB06B" Padding="5">
+            <dxwui:NavigationButton NavigateTo="ucKhamBenh" Height="60" Width="200" Background="#0AB06B" Opacity="0.5" Padding="5">
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -72,14 +70,13 @@
                                VerticalAlignment="Center"
                            Foreground="White"
                            FontWeight="Bold"
-                           FontSize="12" Margin="0,14,-13,14" />
+                           FontSize="12"  />
                     </Grid>
 
                 </Grid>
-            </dxnav:TileBarItem>
+            </dxwui:NavigationButton>
 
-            <dxnav:TileBarItem Name="tileThanhToan"
-                Height="70" Background="#0AB06B" Padding="5">
+            <dxwui:NavigationButton NavigateTo="ucThanhToan" Height="60" Width="200" Background="#0AB06B" Opacity="0.5" Padding="5">
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -96,14 +93,13 @@
                                VerticalAlignment="Center"
                            Foreground="White"
                            FontWeight="Bold"
-                           FontSize="12" Margin="0,14,-10,14" />
+                           FontSize="12" />
                     </Grid>
 
                 </Grid>
-            </dxnav:TileBarItem>
+            </dxwui:NavigationButton>
 
-            <dxnav:TileBarItem Name="tileNhaThuoc"
-                Height="70" Background="#0AB06B" Padding="5">
+            <dxwui:NavigationButton Height="60" Width="200" Background="#0AB06B" Padding="5">
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -124,10 +120,9 @@
                     </Grid>
 
                 </Grid>
-            </dxnav:TileBarItem>
+            </dxwui:NavigationButton>
 
-            <dxnav:TileBarItem Name="tileQuanLy"
-                Height="70" Background="#0AB06B" Padding="5">
+            <dxwui:NavigationButton NavigateTo="ucQuanLy" Height="60" Width="200" Background="#0AB06B" Opacity="0.5" Padding="5">
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -148,9 +143,10 @@
                     </Grid>
 
                 </Grid>
-            </dxnav:TileBarItem>
+            </dxwui:NavigationButton>
 
         </dxnav:TileBar>
+
 
         <dxwui:NavigationFrame Name="frameNhaThuoc"
             DockPanel.Dock="Bottom" AnimationType="Fade">
