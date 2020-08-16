@@ -1,0 +1,139 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HeThongPhongMachTu.Views"
+             xmlns:dxnav="http://schemas.devexpress.com/winfx/2008/xaml/navigation"
+             xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui" x:Class="HeThongPhongMachTu.Views.ucTiepNhan"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="1000">
+    <DockPanel LastChildFill="True">
+        
+        <dxnav:TileBar
+            DockPanel.Dock="Top"
+            VerticalAlignment="Top"  Height="120" Background="#DFDFDF">
+
+            <dxnav:TileBarItem Height="70" Background="#0AB06B" Padding="5">
+                <Grid Margin="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Image Source="../Images/list.png" />
+
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Label Content="Tiếp Nhận" 
+                               VerticalAlignment="Center"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           FontSize="12" />
+                    </Grid>
+
+                </Grid>
+            </dxnav:TileBarItem>
+
+            <dxnav:TileBarItem Height="70" Background="#0AB06B" Padding="5">
+                <Grid Margin="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Image Source="../Images/stethoscope_white.PNG" />
+
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Label Content="Khám bệnh" 
+                               VerticalAlignment="Center"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           FontSize="12" Margin="0,14,-13,14" />
+                    </Grid>
+
+                </Grid>
+            </dxnav:TileBarItem>
+
+            <dxnav:TileBarItem Height="70" Background="#0AB06B" Padding="5">
+                <Grid Margin="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Image Source="../Images/payment.png" />
+
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Label Content="Thanh Toán" 
+                               VerticalAlignment="Center"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           FontSize="12" Margin="0,14,-10,14" />
+                    </Grid>
+
+                </Grid>
+            </dxnav:TileBarItem>
+
+            <dxnav:TileBarItem Height="70" Background="#0AB06B" Padding="5">
+                <Grid Margin="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Image Source="../Images/drug.png" />
+
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Label Content="Nhà thuốc" 
+                               VerticalAlignment="Center"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           FontSize="12" />
+                    </Grid>
+
+                </Grid>
+            </dxnav:TileBarItem>
+
+            <dxnav:TileBarItem Height="70" Background="#0AB06B" Padding="5">
+                <Grid Margin="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Image Source="../Images/statitic.png" />
+
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Label Content="Quản lý" 
+                               VerticalAlignment="Center"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           FontSize="12" />
+                    </Grid>
+
+                </Grid>
+            </dxnav:TileBarItem>
+
+        </dxnav:TileBar>
+
+        <dxwui:NavigationFrame DockPanel.Dock="Bottom">
+            <local:ucTiepNhapOptions></local:ucTiepNhapOptions>
+        </dxwui:NavigationFrame>
+
+    </DockPanel>
+</UserControl>

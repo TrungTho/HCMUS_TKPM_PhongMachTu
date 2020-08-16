@@ -5,6 +5,7 @@ D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. 
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\bin\Debug\DevExpress.Data.v20.1.dll
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\bin\Debug\DevExpress.Mvvm.v20.1.dll
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\bin\Debug\DevExpress.Printing.v20.1.Core.dll
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\bin\Debug\DevExpress.Xpf.Carousel.v20.1.dll
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\bin\Debug\DevExpress.Xpf.Controls.v20.1.dll
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\bin\Debug\DevExpress.Xpf.Core.v20.1.dll
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\bin\Debug\DevExpress.Xpf.Themes.Office2019Colorful.v20.1.dll
@@ -18,6 +19,7 @@ D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. 
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\bin\Debug\DevExpress.Data.v20.1.xml
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\bin\Debug\DevExpress.Printing.v20.1.Core.xml
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\bin\Debug\DevExpress.Xpf.Carousel.v20.1.xml
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\bin\Debug\DevExpress.Xpf.Controls.v20.1.xml
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\bin\Debug\DevExpress.Xpf.Core.v20.1.xml
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\bin\Debug\EntityFramework.xml
@@ -51,6 +53,8 @@ D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. 
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\DangNhap.g.cs
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\MainWindow.g.cs
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\MainView.g.cs
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucTiepNhan.g.cs
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucTiepNhan_DSTrongNgay.g.cs
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\App.g.cs
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\HeThongPhongMachTu_Content.g.cs
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\GeneratedInternalTypeHelper.g.cs
@@ -60,6 +64,8 @@ D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. 
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\MainWindow.baml
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\ResourcesXAML\MyResources.baml
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\MainView.baml
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucTiepNhan.baml
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucTiepNhan_DSTrongNgay.baml
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\HeThongPhongMachTu.g.resources
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\HeThongPhongMachTu.Properties.Resources.resources
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\HeThongPhongMachTu.csproj.GenerateResource.cache
