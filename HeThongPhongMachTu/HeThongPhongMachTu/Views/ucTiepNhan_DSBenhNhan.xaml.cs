@@ -1,5 +1,4 @@
-﻿using HeThongPhongMachTu.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,21 +12,21 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using HeThongPhongMachTu.ViewModels;
 
 namespace HeThongPhongMachTu.Views
 {
     /// <summary>
-    /// Interaction logic for ucTiepNhan.xaml
+    /// Interaction logic for ucTiepNhan_DSBenhNhan.xaml
     /// </summary>
-    public partial class ucTiepNhan : UserControl
+    public partial class ucTiepNhan_DSBenhNhan : UserControl
     {
+        public TiepNhan_DSBenhNhanViewModel ViewModel { get; set; }
 
-        public TiepNhanViewModel ViewModel { get; set; }
-
-        public ucTiepNhan()
+        public ucTiepNhan_DSBenhNhan()
         {
             InitializeComponent();
-            this.DataContext = ViewModel = new TiepNhanViewModel();
+            this.DataContext = ViewModel = new TiepNhan_DSBenhNhanViewModel();
         }
     }
 }

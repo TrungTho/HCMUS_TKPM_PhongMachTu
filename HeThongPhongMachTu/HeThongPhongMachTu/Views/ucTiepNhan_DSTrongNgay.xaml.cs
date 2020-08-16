@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using HeThongPhongMachTu.ViewModels;
 
 namespace HeThongPhongMachTu.Views
 {
@@ -20,9 +21,12 @@ namespace HeThongPhongMachTu.Views
     /// </summary>
     public partial class ucTiepNhapOptions : UserControl
     {
+        public TiepNhan_DSTrongNgayViewModel ViewModel { get; set; }
+
         public ucTiepNhapOptions()
         {
             InitializeComponent();
+            this.DataContext = ViewModel = new TiepNhan_DSTrongNgayViewModel();
         }
     }
 }

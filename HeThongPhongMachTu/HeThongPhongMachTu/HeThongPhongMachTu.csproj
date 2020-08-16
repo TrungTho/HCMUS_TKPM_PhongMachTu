@@ -83,8 +83,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModels\TiepNhanViewModel.cs" />
+    <Compile Include="ViewModels\TiepNhan_DSBenhNhanViewModel.cs" />
+    <Compile Include="ViewModels\TiepNhan_DSTrongNgayViewModel.cs" />
+    <Compile Include="Views\ucKhamBenh.xaml.cs">
+      <DependentUpon>ucKhamBenh.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ucTiepNhan.xaml.cs">
       <DependentUpon>ucTiepNhan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucTiepNhan_DSBenhNhan.xaml.cs">
+      <DependentUpon>ucTiepNhan_DSBenhNhan.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ucTiepNhan_DSTrongNgay.xaml.cs">
       <DependentUpon>ucTiepNhan_DSTrongNgay.xaml</DependentUpon>
@@ -187,7 +196,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\ucKhamBenh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ucTiepNhan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucTiepNhan_DSBenhNhan.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

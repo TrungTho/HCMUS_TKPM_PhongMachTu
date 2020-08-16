@@ -1,5 +1,4 @@
-﻿using HeThongPhongMachTu.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,17 +16,13 @@ using System.Windows.Shapes;
 namespace HeThongPhongMachTu.Views
 {
     /// <summary>
-    /// Interaction logic for ucTiepNhan.xaml
+    /// Interaction logic for ucKhamBenh.xaml
     /// </summary>
-    public partial class ucTiepNhan : UserControl
+    public partial class ucKhamBenh : UserControl
     {
-
-        public TiepNhanViewModel ViewModel { get; set; }
-
-        public ucTiepNhan()
+        public ucKhamBenh()
         {
             InitializeComponent();
-            this.DataContext = ViewModel = new TiepNhanViewModel();
         }
     }
 }
