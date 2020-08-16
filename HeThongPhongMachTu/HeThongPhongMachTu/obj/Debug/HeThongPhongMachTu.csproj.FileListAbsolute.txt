@@ -79,3 +79,13 @@ D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. 
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucKhamBenh.baml
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucTiepNhan_DSBenhNhan.baml
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\HeThongPhongMachTu.csprojAssemblyReference.cache
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucKhamBenh_DaKham.g.cs
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucKhamBenh_ChoKham.g.cs
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucKhamBenh_ChoKham.baml
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucKhamBenh_DaKham.baml
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucThanhToan.g.cs
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucThanhToan.baml
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucThanhToan_ChoThanhToan.g.cs
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucThanhToan_DaThanhToan.g.cs
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucThanhToan_ChoThanhToan.baml
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucThanhToan_DaThanhToan.baml

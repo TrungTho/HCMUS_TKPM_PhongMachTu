@@ -16,6 +16,6 @@
         <Grid Grid.Row="0" Height="120" VerticalAlignment="Top">
             <Views:MainView Loaded="MainView_Loaded"/>
         </Grid>-->
-        <Views:ucTiepNhan/>
+        <Views:ucThanhToan/>
     </Grid>
 </dx:ThemedWindow>

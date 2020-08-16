@@ -8,5 +8,8 @@
     <viewmodel:TiepNhanViewModel x:Key="TiepNhanVM"></viewmodel:TiepNhanViewModel>
     <viewmodel:TiepNhan_DSBenhNhanViewModel x:Key="TiepNhanDSBenhNhanVM"></viewmodel:TiepNhan_DSBenhNhanViewModel>
     <viewmodel:TiepNhan_DSTrongNgayViewModel x:Key="TiepNhanDSTrongNgayVM"></viewmodel:TiepNhan_DSTrongNgayViewModel>
+    <viewmodel:KhamBenhViewModel x:Key="KhamBenhVM"></viewmodel:KhamBenhViewModel>
+    <viewmodel:KhamBenh_ChoKhamViewModel x:Key="KhamBenh_ChoKhamVM"></viewmodel:KhamBenh_ChoKhamViewModel>
+    <viewmodel:KhamBenh_DaKhamViewModel x:Key="KhamBenh_DaKhamVM"></viewmodel:KhamBenh_DaKhamViewModel>
     
 </ResourceDictionary>

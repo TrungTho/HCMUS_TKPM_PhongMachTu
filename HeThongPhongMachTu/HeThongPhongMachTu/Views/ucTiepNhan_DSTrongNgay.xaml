@@ -10,6 +10,13 @@
              d:DesignHeight="450" d:DesignWidth="800" Background="White"
     DataContext="{StaticResource TiepNhanDSTrongNgayVM}"
     >
+    <UserControl.Resources>
+        <Style TargetType="Image">
+            <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
+            <Setter Property="Width" Value="50"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="8*"/>
@@ -39,6 +46,7 @@
 
                             <Grid Grid.Row="0" HorizontalAlignment="Left">
                                 <Image Source="../Images/todayicon_gray.png"
+                                       RenderOptions.BitmapScalingMode="HighQuality"
                                        Width="50" HorizontalAlignment="Left"/>
                             </Grid>
 
@@ -59,6 +67,7 @@
 
                             <Grid Grid.Row="0" HorizontalAlignment="Left">
                                 <Image Source="../Images/listaccount_gray.PNG"
+                                       RenderOptions.BitmapScalingMode="HighQuality"
                                        Width="50" HorizontalAlignment="Left"/>
                             </Grid>
 
@@ -75,7 +84,7 @@
 
             <Grid Grid.Column="1">
                 <DockPanel LastChildFill="True">
-                    <ComboBox x:Name="comboBoxSearchBenhNhan" Margin="0 5 0 0"
+                    <ComboBox x:Name="comboBoxThemBNVaoHangDoi" Margin="0 5 0 0"
                         DockPanel.Dock="Top" materialDesign:HintAssist.Hint="Search"
                           IsEditable="True"
                           materialDesign:HintAssist.HintOpacity=".26">

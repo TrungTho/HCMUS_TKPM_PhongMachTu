@@ -83,11 +83,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModels\KhamBenhViewModel.cs" />
+    <Compile Include="ViewModels\KhamBenh_ChoKhamViewModel.cs" />
+    <Compile Include="ViewModels\KhamBenh_DaKhamViewModel.cs" />
     <Compile Include="ViewModels\TiepNhanViewModel.cs" />
     <Compile Include="ViewModels\TiepNhan_DSBenhNhanViewModel.cs" />
     <Compile Include="ViewModels\TiepNhan_DSTrongNgayViewModel.cs" />
     <Compile Include="Views\ucKhamBenh.xaml.cs">
       <DependentUpon>ucKhamBenh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucKhamBenh_ChoKham.xaml.cs">
+      <DependentUpon>ucKhamBenh_ChoKham.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucKhamBenh_DaKham.xaml.cs">
+      <DependentUpon>ucKhamBenh_DaKham.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucThanhToan.xaml.cs">
+      <DependentUpon>ucThanhToan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucThanhToan_ChoThanhToan.xaml.cs">
+      <DependentUpon>ucThanhToan_ChoThanhToan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucThanhToan_DaThanhToan.xaml.cs">
+      <DependentUpon>ucThanhToan_DaThanhToan.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ucTiepNhan.xaml.cs">
       <DependentUpon>ucTiepNhan.xaml</DependentUpon>
@@ -197,6 +215,26 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\ucKhamBenh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucKhamBenh_ChoKham.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucKhamBenh_DaKham.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucThanhToan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucThanhToan_ChoThanhToan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucThanhToan_DaThanhToan.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
