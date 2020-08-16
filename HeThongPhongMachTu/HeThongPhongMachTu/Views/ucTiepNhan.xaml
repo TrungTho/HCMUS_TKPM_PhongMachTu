@@ -4,17 +4,29 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:HeThongPhongMachTu.Views"
+            xmlns:dxwuin="http://schemas.devexpress.com/winfx/2008/xaml/windowsui/navigation"
              xmlns:dxnav="http://schemas.devexpress.com/winfx/2008/xaml/navigation"
-             xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui" x:Class="HeThongPhongMachTu.Views.ucTiepNhan"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui" 
+    x:Class="HeThongPhongMachTu.Views.ucTiepNhan"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="1000">
+             d:DesignHeight="450" d:DesignWidth="1000"
+    DataContext="{StaticResource TiepNhanVM}"
+    >
     <DockPanel LastChildFill="True">
-        
+
         <dxnav:TileBar
             DockPanel.Dock="Top"
-            VerticalAlignment="Top"  Height="120" Background="#DFDFDF">
+            VerticalAlignment="Top"  Height="120" Background="#DFDFDF"
+            >
+            <dxnav:TileBar.Resources>
+                <Style TargetType="dxnav:TileBarItem">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                </Style>
+            </dxnav:TileBar.Resources>
 
-            <dxnav:TileBarItem Height="70" Background="#0AB06B" Padding="5">
+        <dxnav:TileBarItem 
+                Height="70" Background="#0AB06B" Padding="5">
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -131,7 +143,10 @@
 
         </dxnav:TileBar>
 
-        <dxwui:NavigationFrame DockPanel.Dock="Bottom">
+        <dxwui:NavigationFrame DockPanel.Dock="Bottom" AnimationType="Fade">
+            <dxmvvm:Interaction.Behaviors>
+                <dxwuin:FrameNavigationService />
+            </dxmvvm:Interaction.Behaviors>
             <local:ucTiepNhapOptions></local:ucTiepNhapOptions>
         </dxwui:NavigationFrame>
 

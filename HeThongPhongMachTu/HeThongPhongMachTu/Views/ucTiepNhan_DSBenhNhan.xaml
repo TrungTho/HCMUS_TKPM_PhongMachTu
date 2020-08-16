@@ -5,8 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:HeThongPhongMachTu.Views"
             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             DataContext="{StaticResource TiepNhanDSBenhNhanVM}"
+             >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="8*"/>
@@ -22,12 +25,12 @@
             <Grid Grid.Column="0" Margin="0 0 5 0">
                 <DockPanel LastChildFill="False">
                     <DockPanel.Resources>
-                        <Style TargetType="{x:Type Button}">
+                        <Style TargetType="dxwui:NavigationButton">
                             <Setter Property="Margin" Value="1 10 1 10"/>
                         </Style>
                     </DockPanel.Resources>
 
-                    <Button DockPanel.Dock="Top">
+                    <dxwui:NavigationButton DockPanel.Dock="Top" NavigateTo="ucTiepNhapOptions">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
@@ -45,9 +48,9 @@
                             </Grid>
 
                         </Grid>
-                    </Button>
+                    </dxwui:NavigationButton>
 
-                    <Button DockPanel.Dock="Top">
+                    <dxwui:NavigationButton DockPanel.Dock="Top">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
@@ -65,7 +68,7 @@
                             </Grid>
 
                         </Grid>
-                    </Button>
+                    </dxwui:NavigationButton>
 
                 </DockPanel>
             </Grid>

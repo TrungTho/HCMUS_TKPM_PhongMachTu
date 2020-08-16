@@ -5,5 +5,8 @@
 
     <viewmodel:MainViewModel x:Key="MainVM"></viewmodel:MainViewModel>
     <viewmodel:DangNhapViewModel x:Key="DangNhapVM"></viewmodel:DangNhapViewModel>
+    <viewmodel:TiepNhanViewModel x:Key="TiepNhanVM"></viewmodel:TiepNhanViewModel>
+    <viewmodel:TiepNhan_DSBenhNhanViewModel x:Key="TiepNhanDSBenhNhanVM"></viewmodel:TiepNhan_DSBenhNhanViewModel>
+    <viewmodel:TiepNhan_DSTrongNgayViewModel x:Key="TiepNhanDSTrongNgayVM"></viewmodel:TiepNhan_DSTrongNgayViewModel>
     
 </ResourceDictionary>
