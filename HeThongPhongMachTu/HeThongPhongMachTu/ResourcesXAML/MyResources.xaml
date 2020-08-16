@@ -11,5 +11,6 @@
     <viewmodel:KhamBenhViewModel x:Key="KhamBenhVM"></viewmodel:KhamBenhViewModel>
     <viewmodel:KhamBenh_ChoKhamViewModel x:Key="KhamBenh_ChoKhamVM"></viewmodel:KhamBenh_ChoKhamViewModel>
     <viewmodel:KhamBenh_DaKhamViewModel x:Key="KhamBenh_DaKhamVM"></viewmodel:KhamBenh_DaKhamViewModel>
+    <viewmodel:ThanhToanViewModel x:Key="ThanhToanVM"></viewmodel:ThanhToanViewModel>
     
 </ResourceDictionary>

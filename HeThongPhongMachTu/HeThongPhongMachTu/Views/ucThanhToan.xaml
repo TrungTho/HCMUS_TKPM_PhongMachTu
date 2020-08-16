@@ -9,7 +9,16 @@
              xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
              xmlns:dxnav="http://schemas.devexpress.com/winfx/2008/xaml/navigation"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             DataContext="{StaticResource ThanhToanVM}"
+             d:DesignHeight="450" d:DesignWidth="800"
+             >
+    <UserControl.Resources>
+        <Style TargetType="Image">
+            <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
+            <Setter Property="Width" Value="50"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+    </UserControl.Resources>
     <DockPanel LastChildFill="True">
 
         <dxnav:TileBar
@@ -22,7 +31,8 @@
                 </Style>
             </dxnav:TileBar.Resources>
 
-            <dxnav:TileBarItem
+            <dxnav:TileBarItem Name="tileTiepNhan" Command="{Binding SwitchToTiepNhan}"
+                               CommandParameter="{Binding ElementName=frameThanhToan}"
                 Height="70" Background="#0AB06B" Padding="5">
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
@@ -46,7 +56,8 @@
                 </Grid>
             </dxnav:TileBarItem>
 
-            <dxnav:TileBarItem Height="70" Background="#0AB06B" Padding="5">
+            <dxnav:TileBarItem Name="tileKhamBenh"
+                Height="70" Background="#0AB06B" Padding="5">
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -69,7 +80,8 @@
                 </Grid>
             </dxnav:TileBarItem>
 
-            <dxnav:TileBarItem Height="70" Background="#0AB06B" Padding="5">
+            <dxnav:TileBarItem Name="tileThanhToan"
+                Height="70" Background="#0AB06B" Padding="5">
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -92,7 +104,8 @@
                 </Grid>
             </dxnav:TileBarItem>
 
-            <dxnav:TileBarItem Height="70" Background="#0AB06B" Padding="5">
+            <dxnav:TileBarItem Name="tileNhaThuoc"
+                Height="70" Background="#0AB06B" Padding="5">
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -115,7 +128,8 @@
                 </Grid>
             </dxnav:TileBarItem>
 
-            <dxnav:TileBarItem Height="70" Background="#0AB06B" Padding="5">
+            <dxnav:TileBarItem Name="tileQuanLy"
+                Height="70" Background="#0AB06B" Padding="5">
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -140,7 +154,8 @@
 
         </dxnav:TileBar>
 
-        <dxwui:NavigationFrame DockPanel.Dock="Bottom" AnimationType="Fade">
+        <dxwui:NavigationFrame Name="frameThanhToan"
+            DockPanel.Dock="Bottom" AnimationType="Fade">
             <dxmvvm:Interaction.Behaviors>
                 <dxwuin:FrameNavigationService />
             </dxmvvm:Interaction.Behaviors>
