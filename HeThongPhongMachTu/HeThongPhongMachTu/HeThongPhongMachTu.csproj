@@ -111,6 +111,21 @@
     <Compile Include="Views\ucNhaThuoc_ThuocTrongKho.xaml.cs">
       <DependentUpon>ucNhaThuoc_ThuocTrongKho.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ucQuanLy.xaml.cs">
+      <DependentUpon>ucQuanLy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucQuanLy_ChinhSuaQuyDinh.xaml.cs">
+      <DependentUpon>ucQuanLy_ChinhSuaQuyDinh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucQuanLy_NhanVien.xaml.cs">
+      <DependentUpon>ucQuanLy_NhanVien.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucQuanLy_TaoPhieuThuChi.xaml.cs">
+      <DependentUpon>ucQuanLy_TaoPhieuThuChi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucQuanLy_ThongKe.xaml.cs">
+      <DependentUpon>ucQuanLy_ThongKe.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ucThanhToan.xaml.cs">
       <DependentUpon>ucThanhToan.xaml</DependentUpon>
     </Compile>
@@ -252,6 +267,26 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ucNhaThuoc_ThuocTrongKho.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucQuanLy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucQuanLy_ChinhSuaQuyDinh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucQuanLy_NhanVien.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucQuanLy_TaoPhieuThuChi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucQuanLy_ThongKe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

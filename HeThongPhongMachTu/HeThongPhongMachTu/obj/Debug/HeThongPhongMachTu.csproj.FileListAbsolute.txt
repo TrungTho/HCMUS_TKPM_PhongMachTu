@@ -97,3 +97,13 @@ D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. 
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucNhaThuoc_ChoNhanThuoc.baml
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucNhaThuoc_NhapThuoc.baml
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucNhaThuoc_ThuocTrongKho.baml
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucQuanLy.g.cs
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucQuanLy_ChinhSuaQuyDinh.g.cs
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucQuanLy_NhanVien.g.cs
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucQuanLy_TaoPhieuThuChi.g.cs
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucQuanLy_ThongKe.g.cs
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucQuanLy.baml
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucQuanLy_ChinhSuaQuyDinh.baml
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucQuanLy_NhanVien.baml
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucQuanLy_TaoPhieuThuChi.baml
+D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucQuanLy_ThongKe.baml
