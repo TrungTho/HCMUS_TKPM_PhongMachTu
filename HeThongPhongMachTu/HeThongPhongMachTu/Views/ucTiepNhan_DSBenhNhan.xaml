@@ -61,7 +61,7 @@
                         </Grid>
                     </dxwui:NavigationButton>
 
-                    <dxwui:NavigationButton DockPanel.Dock="Top">
+                    <dxwui:NavigationButton DockPanel.Dock="Top" Background="#2F51A5">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
@@ -69,11 +69,12 @@
                             </Grid.RowDefinitions>
 
                             <Grid Grid.Row="0" HorizontalAlignment="Left">
-                                <Image Source="../Images/listaccount_gray.PNG"/>
+                                <Image Source="../Images/listaccount_white.PNG"/>
                             </Grid>
 
                             <Grid Grid.Row="1">
                                 <Label Content="Danh sách bệnh nhân"
+                                       Foreground="White"
                                        FontWeight="Bold"/>
                             </Grid>
 

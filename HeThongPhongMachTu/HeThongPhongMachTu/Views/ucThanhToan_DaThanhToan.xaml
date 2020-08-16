@@ -53,7 +53,7 @@
                         </Grid>
                     </dxwui:NavigationButton>
 
-                    <dxwui:NavigationButton
+                    <dxwui:NavigationButton Background="#2F51A5"
                         DockPanel.Dock="Top" >
                         <Grid>
                             <Grid.RowDefinitions>
@@ -62,11 +62,12 @@
                             </Grid.RowDefinitions>
 
                             <Grid Grid.Row="0" HorizontalAlignment="Left">
-                                <Image Source="../Images/historynvoice_gray.PNG"/>
+                                <Image Source="../Images/historynvoice_white.PNG"/>
                             </Grid>
 
                             <Grid Grid.Row="1">
                                 <Label Content="HD đã thanh toán"
+                                       Foreground="White"
                                        FontWeight="Bold"/>
                             </Grid>
 

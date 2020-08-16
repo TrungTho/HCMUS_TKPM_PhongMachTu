@@ -35,7 +35,7 @@
                         </Style>
                     </DockPanel.Resources>
 
-                    <dxwui:NavigationButton DockPanel.Dock="Top" >
+                    <dxwui:NavigationButton DockPanel.Dock="Top" Background="#2F51A5">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
@@ -43,11 +43,12 @@
                             </Grid.RowDefinitions>
 
                             <Grid Grid.Row="0" HorizontalAlignment="Left">
-                                <Image Source="../Images/invoice_gray.png"/>
+                                <Image Source="../Images/invoice_white.png"/>
                             </Grid>
 
                             <Grid Grid.Row="1">
                                 <Label Content="HD Chờ thanh toán"
+                                       Foreground="White"
                                        FontWeight="Bold"/>
                             </Grid>
 

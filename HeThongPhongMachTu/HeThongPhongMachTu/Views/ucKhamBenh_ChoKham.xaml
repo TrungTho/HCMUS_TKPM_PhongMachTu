@@ -36,7 +36,7 @@
                         </Style>
                     </DockPanel.Resources>
 
-                    <dxwui:NavigationButton DockPanel.Dock="Top" >
+                    <dxwui:NavigationButton DockPanel.Dock="Top" Background="#2F51A5">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
@@ -44,11 +44,12 @@
                             </Grid.RowDefinitions>
 
                             <Grid Grid.Row="0" HorizontalAlignment="Left">
-                                <Image Source="../Images/stethoscope_gray.png"/>
+                                <Image Source="../Images/stethoscope_white.png"/>
                             </Grid>
 
                             <Grid Grid.Row="1">
                                 <Label Content="Bệnh nhân chờ khám"
+                                       Foreground="White"
                                        FontWeight="Bold"/>
                             </Grid>
 

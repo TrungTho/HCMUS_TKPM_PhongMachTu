@@ -24,5 +24,6 @@ namespace HeThongPhongMachTu.Views
         {
             InitializeComponent();
         }
+
     }
 }
