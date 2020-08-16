@@ -7,6 +7,7 @@
             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui" x:Class="HeThongPhongMachTu.Views.ucTiepNhapOptions"
              mc:Ignorable="d" 
+            xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              d:DesignHeight="450" d:DesignWidth="800" Background="White"
     DataContext="{StaticResource TiepNhanDSTrongNgayVM}"
     >
@@ -89,6 +90,7 @@
                         DockPanel.Dock="Top" materialDesign:HintAssist.Hint="Search"
                           IsEditable="True"
                           materialDesign:HintAssist.HintOpacity=".26">
+                        
                         <ComboBoxItem Content="Apple"/>
                         <ComboBoxItem Content="Banana"/>
                         <ComboBoxItem Content="Pear"/>

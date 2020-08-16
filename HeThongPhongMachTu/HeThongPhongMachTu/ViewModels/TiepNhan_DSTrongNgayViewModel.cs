@@ -10,13 +10,10 @@ namespace HeThongPhongMachTu.ViewModels
 {
     public class TiepNhan_DSTrongNgayViewModel:BaseViewModel
     {
-        private INavigationService NavigationService { get { return this.GetService<INavigationService>(); } }
-
-        public TiepNhan_DSTrongNgayViewModel() { }
-
-        public void NavigateDetails()
+        public TiepNhan_DSTrongNgayViewModel()
         {
-            NavigationService.Navigate("ucTiepNhan_DSBenhNhan", null, this);
+
         }
+
     }
 }

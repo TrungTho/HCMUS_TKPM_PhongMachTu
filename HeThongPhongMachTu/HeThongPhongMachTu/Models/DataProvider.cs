@@ -16,7 +16,7 @@ namespace HeThongPhongMachTu.Models
         {
             get
             {
-                if (_instance != null)
+                if (_instance == null)
                     _instance = new DataProvider();
                 return _instance;
             }

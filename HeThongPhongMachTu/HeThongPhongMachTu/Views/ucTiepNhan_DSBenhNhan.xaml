@@ -97,7 +97,9 @@
                     </ComboBox>
 
                     <Border BorderBrush="Gray" BorderThickness="1">
-                        <ListView x:Name="listViewDSTrongNgay" 
+                        <ListView ItemsSource="{Binding ListbenhNhans}"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                            x:Name="listViewDSTrongNgay" 
                               HorizontalContentAlignment="Center">
                             <ListView.Resources>
                                 <Style TargetType="{x:Type GridViewColumnHeader}">
@@ -108,10 +110,10 @@
                                 <GridView>
                                     <GridViewColumn Header="STT" Width="60" DisplayMemberBinding="{Binding STT}" />
                                     <GridViewColumn Header="Mã BN" Width="100" DisplayMemberBinding="{Binding MaBN}" />
-                                    <GridViewColumn Header="Họ và tên" Width="200" DisplayMemberBinding="{Binding HoTen}" />
-                                    <GridViewColumn Header="Tuổi" Width="60" DisplayMemberBinding="{Binding Mail}" />
-                                    <GridViewColumn Header="Giới tính" Width="150" DisplayMemberBinding="{Binding GioiTinh}" />
-                                    <GridViewColumn Header="Địa chỉ" Width="200" DisplayMemberBinding="{Binding DiaChi}"/>
+                                    <GridViewColumn Header="Họ và tên" Width="150" DisplayMemberBinding="{Binding HoTen}" />
+                                    <GridViewColumn Header="Ngày sinh" Width="100" DisplayMemberBinding="{Binding NgaySinh}" />
+                                    <GridViewColumn Header="Giới tính" Width="50" DisplayMemberBinding="{Binding SEX}" />
+                                    <GridViewColumn Header="Địa chỉ" Width="300" DisplayMemberBinding="{Binding DiaChi}"/>
                                 </GridView>
                             </ListView.View>
                         </ListView>

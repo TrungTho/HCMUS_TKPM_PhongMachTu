@@ -19,7 +19,10 @@ namespace HeThongPhongMachTu.Models
         {
             this.CT_DanhSachKham = new HashSet<CT_DanhSachKham>();
         }
-    
+
+        public int STT { get; set; }
+        public string SEX { get; set; }
+
         public string MaBN { get; set; }
         public string HoTen { get; set; }
         public System.DateTime NgaySinh { get; set; }
@@ -27,7 +30,7 @@ namespace HeThongPhongMachTu.Models
         public string CMND { get; set; }
         public string SDT { get; set; }
         public string SDTNguoiThan { get; set; }
-        public string GioiTinh { get; set; }
+        public bool GioiTinh { get; set; }
         public int CanNang { get; set; }
         public string NgheNghiep { get; set; }
     
