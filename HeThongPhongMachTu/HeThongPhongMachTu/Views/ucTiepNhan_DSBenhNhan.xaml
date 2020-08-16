@@ -97,7 +97,7 @@
                     </ComboBox>
 
                     <Border BorderBrush="Gray" BorderThickness="1">
-                        <ListView ItemsSource="{Binding ListbenhNhans}"
+                        <ListView ItemsSource="{Binding ListbenhNhans, UpdateSourceTrigger=PropertyChanged}"
                                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                             x:Name="listViewDSTrongNgay" 
                               HorizontalContentAlignment="Center">

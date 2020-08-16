@@ -7,7 +7,10 @@
     xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
     xmlns:dxwuin="http://schemas.devexpress.com/winfx/2008/xaml/windowsui/navigation"
     x:Class="HeThongPhongMachTu.MainWindow"
-    Title="MainWindow" Height="800" Width="1000">
+    Title="MainWindow" TitleAlignment="Center"
+    Height="800" Width="1000"
+    WindowStartupLocation="CenterScreen"
+    >
     
     <Grid>
         <!--<Grid.RowDefinitions>

@@ -88,13 +88,16 @@
                 <DockPanel LastChildFill="True">
                     <ComboBox x:Name="comboBoxThemBNVaoHangDoi" Margin="0 5 0 0"
                         DockPanel.Dock="Top" materialDesign:HintAssist.Hint="Search"
-                          IsEditable="True"
+                          IsEditable="True" ItemsSource="{Binding ListbenhNhans}"
+                              DisplayMemberPath="{Binding MaBN}"
+                              SelectedValuePath="{Binding MaBN}"
                           materialDesign:HintAssist.HintOpacity=".26">
-                        
-                        <ComboBoxItem Content="Apple"/>
-                        <ComboBoxItem Content="Banana"/>
-                        <ComboBoxItem Content="Pear"/>
-                        <ComboBoxItem Content="Orange"/>
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="GotFocus">
+                                <i:InvokeCommandAction Command="{Binding searchbarFocusCommand}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+
                     </ComboBox>
 
                     <Border BorderBrush="Gray" BorderThickness="1">
