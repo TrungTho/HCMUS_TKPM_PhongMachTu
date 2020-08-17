@@ -13,7 +13,6 @@ namespace HeThongPhongMachTu.ViewModels
     {
         public ICommand UpdateNgayBatDauCommand { get; set; }
         public ICommand UpdateNgayKetThucCommand { get; set; }
-        public ICommand ShowSomeThing { get; set; }
 
         private string ngayBatDau;
         private string ngayKetThuc;
@@ -23,10 +22,27 @@ namespace HeThongPhongMachTu.ViewModels
 
         public QuanLy_ThongKeViewModel()
         {
-            UpdateNgayBatDauCommand = new RelayCommand<DatePicker>((p) => { return p == null ? false : true; }, (p) => NgayBatDau=p.Text);
-            UpdateNgayKetThucCommand = new RelayCommand<DatePicker>((p) => { return p == null ? false : true; }, (p) => NgayKetThuc=p.Text);
-            ShowSomeThing = new RelayCommand<object>((p) => { return  true; }, (p) => MessageBox.Show($"{NgayBatDau} - {ngayKetThuc}"));
+            UpdateNgayBatDauCommand = new RelayCommand<DatePicker>((p) => { return p == null ? false : true; }, (p) => updateNgayBatDau(p));
+            UpdateNgayKetThucCommand = new RelayCommand<DatePicker>((p) => { return p == null ? false : true; }, (p) => updateNgayKetThuc(p));
+        }
 
+        void updateNgayBatDau( DatePicker p)
+        {
+            NgayBatDau = p.Text;
+            if (NgayKetThuc != "" && NgayKetThuc!=null)
+                ShowDataToListView();
+        }
+
+        void updateNgayKetThuc (DatePicker p)
+        {
+            NgayKetThuc = p.Text;
+            if (NgayBatDau != "" && NgayBatDau!=null)
+                ShowDataToListView();
+        }
+
+        void ShowDataToListView()
+        {
+            MessageBox.Show($"{NgayBatDau} - {ngayKetThuc}");
         }
 
     }
