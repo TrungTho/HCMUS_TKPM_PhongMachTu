@@ -19,4 +19,5 @@
     <viewmodel:NhaThuoc_ThuocTrongKhoViewModel x:Key="NhaThuoc_ThuocTrongKhoVM"></viewmodel:NhaThuoc_ThuocTrongKhoViewModel>
     <viewmodel:QuanLy_NhanVienViewModel x:Key="QuanLy_NhanVienVM"></viewmodel:QuanLy_NhanVienViewModel>
     <viewmodel:QuanLy_PhieuThuChiViewModel x:Key="QuanLy_PhieuThuChiVM"></viewmodel:QuanLy_PhieuThuChiViewModel>
+    <viewmodel:QuanLy_ThongKeViewModel x:Key="QuanLy_ThongKeVM"></viewmodel:QuanLy_ThongKeViewModel>
 </ResourceDictionary>
