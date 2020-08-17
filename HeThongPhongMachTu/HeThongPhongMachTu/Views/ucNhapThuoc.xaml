@@ -1,0 +1,166 @@
+﻿<UserControl x:Class="HeThongPhongMachTu.Views.ucNhapThuoc"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HeThongPhongMachTu.Views"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
+             DataContext="{StaticResource NhaThuoc_NhapThuocVM}"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             Background="White"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="Image">
+            <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
+            <!--<Setter Property="Width" Value="50"/>-->
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0"  Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Margin="10 0 10 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="8*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="1" Content="Nhập thuốc" 
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontSize="20" FontWeight="Bold"/>
+
+                    <dxwui:NavigationButton NavigateTo="ucTiepNhan_DSBenhNhan"
+                        Grid.Column="0" Background="Transparent" BorderBrush="Transparent"
+                            Margin="0" Padding="0">
+                        <Image Source="../Images/backicon.png"/>
+                    </dxwui:NavigationButton>
+                </Grid>
+
+                <Border Grid.Row="1" BorderBrush="Gray" BorderThickness="2">
+                    <Grid Grid.Row="1" >
+                        <Image Source="../Images/drugicon.PNG"/>
+                    </Grid>
+                </Border>
+
+            </Grid>
+
+            <Grid Grid.Column="1" Margin="10 0 10 0">
+                <DockPanel LastChildFill="False">
+
+                    <TextBox DockPanel.Dock="Top" Margin="5" 
+                        Text="{Binding TmpBenhNhan.MaBN, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                        materialDesign:HintAssist.Hint="Mã thuốc" 
+                             Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+                    <TextBox DockPanel.Dock="Top" Margin="5" 
+                        Text="{Binding TmpBenhNhan.HoTen, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                        materialDesign:HintAssist.Hint="Tên thuốc"
+                             Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+                    <DatePicker DockPanel.Dock="Top" Margin="5"
+                        Text="{Binding NgaySinh, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                        materialDesign:HintAssist.Hint="Số lượng"
+                        Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+
+                    <TextBox DockPanel.Dock="Top" Margin="5"
+                        Text="{Binding TmpBenhNhan.DiaChi, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                        materialDesign:HintAssist.Hint="Đơn giá"
+                             Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+                    <TextBox DockPanel.Dock="Top" Margin="5"
+                        Text="{Binding TmpBenhNhan.SDT, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                        materialDesign:HintAssist.Hint="Đơn vị"
+                             Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+                    <TextBox DockPanel.Dock="Top" Margin="5"
+                        Text="{Binding TmpBenhNhan.SDT, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                        materialDesign:HintAssist.Hint="Thông tin"
+                             Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+                </DockPanel>
+            </Grid>
+
+            
+
+        </Grid>
+
+        <Grid Grid.Row="1" Background="#6A6868" Margin="0">
+            <DockPanel LastChildFill="False" HorizontalAlignment="Center">
+                <Button Background="Transparent" BorderThickness="0"
+                        Margin="0" Width="auto" Height="auto">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Image HorizontalAlignment="Center"
+                                Source="../Images/saveicon_white.PNG" Width="50" />
+                        </Grid>
+
+                        <Grid Grid.Row="1">
+                            <Label Content="Xác nhận" HorizontalAlignment="Center"
+                                   Foreground="White"
+                                       FontWeight="Normal"/>
+                        </Grid>
+                    </Grid>
+
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction Command="{Binding SaveCommand}"
+                                                   CommandParameter="{Binding ElementName=comboBoxSEX}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+
+                </Button>
+
+                <dxwui:NavigationButton NavigateTo="ucTiepNhan_DSBenhNhan"
+                    Background="Transparent" BorderThickness="0"
+                        Margin="0" Width="auto" Height="auto">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Image HorizontalAlignment="Center"
+                                Source="../Images/cancelicon_white.PNG" Width="50" />
+                        </Grid>
+
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="21*"/>
+                                <ColumnDefinition Width="4*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="Hủy" HorizontalAlignment="Center"
+                                   Foreground="White"
+                                       FontWeight="Normal" Margin="10,0,1.661,0"/>
+                        </Grid>
+                    </Grid>
+
+                </dxwui:NavigationButton>
+            </DockPanel>
+        </Grid>
+    </Grid>
+</UserControl>
