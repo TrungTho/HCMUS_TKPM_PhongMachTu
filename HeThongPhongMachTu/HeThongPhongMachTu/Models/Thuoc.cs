@@ -21,6 +21,7 @@ namespace HeThongPhongMachTu.Models
             this.PhieuNhapThuocs = new HashSet<PhieuNhapThuoc>();
         }
     
+        public int STT { get; set; }
         public string MaThuoc { get; set; }
         public string TenThuoc { get; set; }
         public string MaDV { get; set; }

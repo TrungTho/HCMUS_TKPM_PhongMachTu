@@ -16,4 +16,6 @@
     <viewmodel:ThanhToan_ChoThanhToanViewModel x:Key="ThanhToan_ChoTTVM"></viewmodel:ThanhToan_ChoThanhToanViewModel>
     <viewmodel:ThanhToan_DaThanhToanViewModel x:Key="ThanhToan_DaTTVM"></viewmodel:ThanhToan_DaThanhToanViewModel>
     <viewmodel:NhaThuoc_ChoNhanThuocViewModel x:Key="NhaThuoc_ChoNhanThuocVM"></viewmodel:NhaThuoc_ChoNhanThuocViewModel>
+    <viewmodel:NhaThuoc_ThuocTrongKhoViewModel x:Key="NhaThuoc_ThuocTrongKhoVM"></viewmodel:NhaThuoc_ThuocTrongKhoViewModel>
+    <viewmodel:QuanLy_NhanVienViewModel x:Key="QuanLy_NhanVienVM"></viewmodel:QuanLy_NhanVienViewModel>
 </ResourceDictionary>

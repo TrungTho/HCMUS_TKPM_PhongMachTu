@@ -36,7 +36,7 @@ namespace HeThongPhongMachTu.ViewModels
                 benhNhan = query;
                 benhNhan.STT = stt;
                 benhNhan.SEX = query.GioiTinh == true ? "Nam" : "Nữ";
-
+                benhNhan.Tuoi = (DateTime.Now.Year - query.NgaySinh.Year).ToString();
                 ListbenhNhans.Add(benhNhan);
             }
 

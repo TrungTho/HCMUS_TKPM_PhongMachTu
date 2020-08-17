@@ -6,7 +6,9 @@
              xmlns:local="clr-namespace:HeThongPhongMachTu.Views"
              xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             DataContext="{StaticResource QuanLy_NhanVienVM}"
+             >
     <UserControl.Resources>
         <Style TargetType="Image">
             <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
@@ -118,18 +120,9 @@
 
             <Grid Grid.Column="1">
                 <DockPanel LastChildFill="True">
-                    <!--<ComboBox x:Name="comboBoxSearchBenhNhan" Margin="0 5 0 0"
-                        DockPanel.Dock="Top" materialDesign:HintAssist.Hint="Search"
-                          IsEditable="True"
-                          materialDesign:HintAssist.HintOpacity=".26">
-                        <ComboBoxItem Content="Apple"/>
-                        <ComboBoxItem Content="Banana"/>
-                        <ComboBoxItem Content="Pear"/>
-                        <ComboBoxItem Content="Orange"/>
-                    </ComboBox>-->
-
-                    <!--<Border BorderBrush="Gray" BorderThickness="1">
-                        <ListView x:Name="listViewDSChoKham" 
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <ListView x:Name="listViewNhanVien" ItemsSource="{Binding ListNhanVien,
+                            UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                               HorizontalContentAlignment="Center">
                             <ListView.Resources>
                                 <Style TargetType="{x:Type GridViewColumnHeader}">
@@ -139,15 +132,15 @@
                             <ListView.View>
                                 <GridView>
                                     <GridViewColumn Header="STT" Width="60" DisplayMemberBinding="{Binding STT}" />
-                                    <GridViewColumn Header="Mã BN" Width="100" DisplayMemberBinding="{Binding MaBN}" />
+                                    <GridViewColumn Header="Mã NV" Width="100" DisplayMemberBinding="{Binding MaNV}" />
                                     <GridViewColumn Header="Họ và tên" Width="200" DisplayMemberBinding="{Binding HoTen}" />
-                                    <GridViewColumn Header="Tuổi" Width="60" DisplayMemberBinding="{Binding Mail}" />
-                                    <GridViewColumn Header="Giới tính" Width="150" DisplayMemberBinding="{Binding GioiTinh}" />
+                                    <GridViewColumn Header="Tuổi" Width="60" DisplayMemberBinding="{Binding Tuoi}" />
+                                    <GridViewColumn Header="Giới tính" Width="150" DisplayMemberBinding="{Binding SEX}" />
                                     <GridViewColumn Header="Địa chỉ" Width="200" DisplayMemberBinding="{Binding DiaChi}"/>
                                 </GridView>
                             </ListView.View>
                         </ListView>
-                    </Border>-->
+                    </Border>
 
                 </DockPanel>
 

@@ -6,7 +6,9 @@
              xmlns:local="clr-namespace:HeThongPhongMachTu.Views"
              xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             DataContext="{StaticResource NhaThuoc_ThuocTrongKhoVM}"
+             >
     <UserControl.Resources>
         <Style TargetType="Image">
             <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
@@ -110,6 +112,8 @@
 
                     <Border BorderBrush="Gray" BorderThickness="1">
                         <ListView x:Name="listViewChoThanhToan" 
+                                  ItemsSource="{Binding ListThuoc, UpdateSourceTrigger=PropertyChanged}"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                               HorizontalContentAlignment="Center">
                             <ListView.Resources>
                                 <Style TargetType="{x:Type GridViewColumnHeader}">
@@ -119,11 +123,11 @@
                             <ListView.View>
                                 <GridView>
                                     <GridViewColumn Header="STT" Width="60" DisplayMemberBinding="{Binding STT}" />
-                                    <GridViewColumn Header="Mã BN" Width="100" DisplayMemberBinding="{Binding MaBN}" />
-                                    <GridViewColumn Header="Họ và tên" Width="200" DisplayMemberBinding="{Binding HoTen}" />
-                                    <GridViewColumn Header="Tuổi" Width="60" DisplayMemberBinding="{Binding Mail}" />
-                                    <GridViewColumn Header="Giới tính" Width="150" DisplayMemberBinding="{Binding GioiTinh}" />
-                                    <GridViewColumn Header="Địa chỉ" Width="200" DisplayMemberBinding="{Binding DiaChi}"/>
+                                    <GridViewColumn Header="Mã Thuốc" Width="100" DisplayMemberBinding="{Binding MaThuoc}" />
+                                    <GridViewColumn Header="Tên thuốc" Width="200" DisplayMemberBinding="{Binding TenThuoc}" />
+                                    <GridViewColumn Header="Số lượng" Width="60" DisplayMemberBinding="{Binding TongSoLuong}" />
+                                    <GridViewColumn Header="Đơn giá" Width="150" DisplayMemberBinding="{Binding DonGia}" />
+                                    <GridViewColumn Header="Tình trạng" Width="200" DisplayMemberBinding="{Binding TinhTrang}"/>
                                 </GridView>
                             </ListView.View>
                         </ListView>
