@@ -1,5 +1,6 @@
 ﻿using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
+using DevExpress.Xpf.WindowsUI;
 using HeThongPhongMachTu.Models;
 using System;
 using System.Collections.Generic;
@@ -9,20 +10,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace HeThongPhongMachTu.ViewModels
 {
     public class TiepNhan_DSBenhNhanViewModel:BaseViewModel
     {
+        public ICommand DisableEditButtonCommand { get; set; }
+        public ICommand EnableEditButtonCommand { get; set; }
+        public ICommand UpdateSelectedBenhNhan{ get; set; }
+
         private ObservableCollection<BenhNhan> _listbenhNhans;
 
         public ObservableCollection<BenhNhan> ListbenhNhans { get => _listbenhNhans; set { _listbenhNhans = value; OnPropertyChanged(); } }
+
+        public static BenhNhan _selectedBenhNhan;
 
         public TiepNhan_DSBenhNhanViewModel()
         {
             //itemsource for listview
             ListbenhNhans = new ObservableCollection<BenhNhan>();
+            _selectedBenhNhan = new BenhNhan();
 
             //select all record in benhnhan
             var queries = DataProvider.Instance.DB.BenhNhans.ToList();
@@ -40,7 +49,12 @@ namespace HeThongPhongMachTu.ViewModels
                 ListbenhNhans.Add(benhNhan);
             }
 
-            
+            //disable button edit
+            DisableEditButtonCommand = new RelayCommand<NavigationButton>((p) => { return p == null ? false : true; }, (p) => p.IsEnabled=false);
+            EnableEditButtonCommand = new RelayCommand<NavigationButton>((p) => { return p == null ? false : true; }, (p) => p.IsEnabled=true);
+            UpdateSelectedBenhNhan = new RelayCommand<ListView>((p) => { return p == null ? false : true; }, (p) => _selectedBenhNhan=p.SelectedItem as BenhNhan);
+
+
         }
 
     }

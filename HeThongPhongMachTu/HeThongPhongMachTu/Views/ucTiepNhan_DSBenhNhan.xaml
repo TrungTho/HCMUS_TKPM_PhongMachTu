@@ -11,6 +11,12 @@
              d:DesignHeight="450" d:DesignWidth="800"
              DataContext="{StaticResource TiepNhanDSBenhNhanVM}"
              >
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding DisableEditButtonCommand}"
+                        CommandParameter="{Binding ElementName=buttonSuaBenhNhan}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
     <UserControl.Resources>
         <Style TargetType="Image">
             <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
@@ -117,8 +123,15 @@
                     <Border BorderBrush="Gray" BorderThickness="1">
                         <ListView ItemsSource="{Binding ListbenhNhans, UpdateSourceTrigger=PropertyChanged}"
                                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                            x:Name="listViewDSTrongNgay" 
-                              HorizontalContentAlignment="Center">
+                            x:Name="listViewDSBenhNhan" 
+                              HorizontalContentAlignment="Center"
+                                  >
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="MouseUp">
+                                    <i:InvokeCommandAction Command="{Binding EnableEditButtonCommand}"
+                                                               CommandParameter="{Binding ElementName=buttonSuaBenhNhan}"/>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
                             <ListView.Resources>
                                 <Style TargetType="{x:Type GridViewColumnHeader}">
                                     <Setter Property="HorizontalContentAlignment" Value="Center" />
@@ -170,9 +183,16 @@
 
                 </dxwui:NavigationButton>
                 
-                <Button Name="buttonSuaBenhNhan"
+                <dxwui:NavigationButton NavigateTo="ucTiepNhan_BenhNhanCu"
+                    Name="buttonSuaBenhNhan"
                     Background="Transparent" BorderThickness="0"
                         Margin="0" Width="auto" Height="auto">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction Command="{Binding UpdateSelectedBenhNhan}"
+                                                               CommandParameter="{Binding ElementName=listViewDSBenhNhan}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition/>
@@ -191,7 +211,7 @@
                         </Grid>
                     </Grid>
 
-                </Button>
+                </dxwui:NavigationButton>
                 
                 <Button  Name="buttonXoaBenhNhan"
                     Background="Transparent" BorderThickness="0"

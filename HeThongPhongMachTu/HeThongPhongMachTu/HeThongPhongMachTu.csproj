@@ -102,6 +102,7 @@
     <Compile Include="ViewModels\ThanhToan_ChoThanhToanViewModel.cs" />
     <Compile Include="ViewModels\ThanhToan_DaThanhToanViewModel.cs" />
     <Compile Include="ViewModels\TiepNhanViewModel.cs" />
+    <Compile Include="ViewModels\TiepNhan_BenhNhanCuViewModel.cs" />
     <Compile Include="ViewModels\TiepNhan_BenhNhanMoiViewModel.cs" />
     <Compile Include="ViewModels\TiepNhan_DSBenhNhanViewModel.cs" />
     <Compile Include="ViewModels\TiepNhan_DSTrongNgayViewModel.cs" />
@@ -152,6 +153,9 @@
     </Compile>
     <Compile Include="Views\ucTiepNhan.xaml.cs">
       <DependentUpon>ucTiepNhan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucTiepNhan_BenhNhanCu.xaml.cs">
+      <DependentUpon>ucTiepNhan_BenhNhanCu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ucTiepNhan_BenhNhanMoi.xaml.cs">
       <DependentUpon>ucTiepNhan_BenhNhanMoi.xaml</DependentUpon>
@@ -321,6 +325,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ucTiepNhan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucTiepNhan_BenhNhanCu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -544,6 +552,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\backicon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\drugicon.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\patienticon.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\stafficon.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Content Include="Models\MyClinic.Context.tt">

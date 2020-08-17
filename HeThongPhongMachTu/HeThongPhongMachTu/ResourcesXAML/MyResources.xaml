@@ -8,11 +8,12 @@
     <viewmodel:TiepNhanViewModel x:Key="TiepNhanVM"></viewmodel:TiepNhanViewModel>
     <viewmodel:TiepNhan_DSBenhNhanViewModel x:Key="TiepNhanDSBenhNhanVM"></viewmodel:TiepNhan_DSBenhNhanViewModel>
     <viewmodel:TiepNhan_DSTrongNgayViewModel x:Key="TiepNhanDSTrongNgayVM"></viewmodel:TiepNhan_DSTrongNgayViewModel>
+    <viewmodel:TiepNhan_BenhNhanMoiViewModel x:Key="TiepNhan_BNMoiVM"></viewmodel:TiepNhan_BenhNhanMoiViewModel>
+    <viewmodel:TiepNhan_BenhNhanCuViewModel x:Key="TiepNhan_BNCuVM"></viewmodel:TiepNhan_BenhNhanCuViewModel>
     <viewmodel:KhamBenhViewModel x:Key="KhamBenhVM"></viewmodel:KhamBenhViewModel>
     <viewmodel:KhamBenh_ChoKhamViewModel x:Key="KhamBenh_ChoKhamVM"></viewmodel:KhamBenh_ChoKhamViewModel>
     <viewmodel:KhamBenh_DaKhamViewModel x:Key="KhamBenh_DaKhamVM"></viewmodel:KhamBenh_DaKhamViewModel>
     <viewmodel:ThanhToanViewModel x:Key="ThanhToanVM"></viewmodel:ThanhToanViewModel>
-    <viewmodel:TiepNhan_BenhNhanMoiViewModel x:Key="TiepNhan_BNMoiVM"></viewmodel:TiepNhan_BenhNhanMoiViewModel>
     <viewmodel:ThanhToan_ChoThanhToanViewModel x:Key="ThanhToan_ChoTTVM"></viewmodel:ThanhToan_ChoThanhToanViewModel>
     <viewmodel:ThanhToan_DaThanhToanViewModel x:Key="ThanhToan_DaTTVM"></viewmodel:ThanhToan_DaThanhToanViewModel>
     <viewmodel:NhaThuoc_ChoNhanThuocViewModel x:Key="NhaThuoc_ChoNhanThuocVM"></viewmodel:NhaThuoc_ChoNhanThuocViewModel>

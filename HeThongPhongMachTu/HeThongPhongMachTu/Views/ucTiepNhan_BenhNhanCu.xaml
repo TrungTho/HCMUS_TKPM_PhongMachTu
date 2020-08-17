@@ -1,17 +1,20 @@
-﻿<UserControl x:Class="HeThongPhongMachTu.Views.ucTiepNhan_BenhNhanMoi"
+﻿<UserControl x:Class="HeThongPhongMachTu.Views.ucTiepNhan_BenhNhanCu"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:HeThongPhongMachTu.Views"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:HeThongPhongMachTu.Views"
              xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" Background="White"
-             DataContext="{StaticResource TiepNhan_BNMoiVM}"
              xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-
-             >
+             DataContext="{StaticResource TiepNhan_BNCuVM}" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadDataToViewCommand}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
     <UserControl.Resources>
         <Style TargetType="Image">
             <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
@@ -45,7 +48,7 @@
                         <ColumnDefinition Width="5*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Label Grid.Column="1" Content="Bệnh nhân mới" 
+                    <Label Grid.Column="1" Content="{Binding TmpBenhNhan.MaBN, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" 
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="20" FontWeight="Bold"/>
@@ -151,7 +154,7 @@
                         </Grid>
 
                         <Grid Grid.Row="1">
-                            <Label Content="Lưu - Chờ khám" HorizontalAlignment="Center"
+                            <Label Content="Cập nhật" HorizontalAlignment="Center"
                                    Foreground="White"
                                        FontWeight="Normal"/>
                         </Grid>
@@ -159,7 +162,7 @@
 
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="Click">
-                            <i:InvokeCommandAction Command="{Binding SaveCommand}"
+                            <i:InvokeCommandAction Command="{Binding UpdateCommand}"
                                                    CommandParameter="{Binding ElementName=comboBoxSEX}"/>
                         </i:EventTrigger>
                     </i:Interaction.Triggers>
