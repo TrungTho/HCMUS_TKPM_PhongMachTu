@@ -536,6 +536,9 @@
     <Resource Include="Images\addicon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\backicon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Content Include="Models\MyClinic.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MyClinic.edmx</DependentUpon>

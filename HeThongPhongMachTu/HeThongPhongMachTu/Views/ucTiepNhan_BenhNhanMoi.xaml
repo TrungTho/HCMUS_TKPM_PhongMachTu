@@ -8,6 +8,9 @@
              xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Background="White"
+             DataContext="{StaticResource TiepNhan_BNMoiVM}"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+
              >
     <UserControl.Resources>
         <Style TargetType="Image">
@@ -37,9 +40,21 @@
                 </Grid.RowDefinitions>
 
                 <Grid Grid.Row="0">
-                    <Label Content="Bệnh nhân mới" HorizontalAlignment="Center"
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="1" Content="Bệnh nhân mới" 
+                           HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="20" FontWeight="Bold"/>
+
+                    <dxwui:NavigationButton NavigateTo="ucTiepNhan_DSBenhNhan"
+                        Grid.Column="0" Background="Transparent" BorderBrush="Transparent"
+                            Margin="0" Padding="0">
+                        <Image Source="../Images/backicon.png"/>
+                    </dxwui:NavigationButton>
                 </Grid>
 
                 <Border Grid.Row="1" BorderBrush="Gray" BorderThickness="2">
@@ -59,28 +74,28 @@
             <Grid Grid.Column="1" Margin="10 0 10 0">
                 <DockPanel LastChildFill="False">
 
-                    <TextBox DockPanel.Dock="Top" Margin="5"
-                        Text="{Binding MaBN, UpdateSourceTrigger=PropertyChanged}"
+                    <TextBox DockPanel.Dock="Top" Margin="5" 
+                        Text="{Binding TmpBenhNhan.MaBN, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="Mã bệnh nhân" IsEnabled="False" Opacity="1"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
-                    <TextBox DockPanel.Dock="Top" Margin="5"
-                        Text="{Binding HoTen, UpdateSourceTrigger=PropertyChanged}"
+                    <TextBox DockPanel.Dock="Top" Margin="5" 
+                        Text="{Binding TmpBenhNhan.HoTen, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="Họ và tên"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
                     <DatePicker DockPanel.Dock="Top" Margin="5"
-                        Text="{Binding NgaySinh, UpdateSourceTrigger=PropertyChanged}"
+                        Text="{Binding NgaySinh, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="Ngày sinh"
                         Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
 
                     <TextBox DockPanel.Dock="Top" Margin="5"
-                        Text="{Binding DiaChi, UpdateSourceTrigger=PropertyChanged}"
+                        Text="{Binding TmpBenhNhan.DiaChi, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="Địa chỉ"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
                     <TextBox DockPanel.Dock="Top" Margin="5"
-                        Text="{Binding SDT, UpdateSourceTrigger=PropertyChanged}"
+                        Text="{Binding TmpBenhNhan.SDT, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="SĐT"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
@@ -90,7 +105,7 @@
             <Grid Grid.Column="2" Margin="10 0 10 0">
                 <DockPanel LastChildFill="False">
 
-                    <ComboBox DockPanel.Dock="Top" Margin="5"
+                    <ComboBox DockPanel.Dock="Top" Margin="5 10" Name="comboBoxSEX"
                         materialDesign:HintAssist.Hint="Giới tính"
                         Style="{StaticResource MaterialDesignFloatingHintComboBox}">
                         <ComboBoxItem>
@@ -102,22 +117,22 @@
                     </ComboBox>
 
                     <TextBox DockPanel.Dock="Top" Margin="5"
-                        Text="{Binding CMND, UpdateSourceTrigger=PropertyChanged}"
+                        Text="{Binding TmpBenhNhan.CMND, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="CMND"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
                     <TextBox DockPanel.Dock="Top" Margin="5"
-                        Text="{Binding NgheNghiep, UpdateSourceTrigger=PropertyChanged}"
+                        Text="{Binding TmpBenhNhan.NgheNghiep, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="Nghề nghiệp"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
                     <TextBox DockPanel.Dock="Top" Margin="5"
-                        Text="{Binding CanNang, UpdateSourceTrigger=PropertyChanged}"
+                        Text="{Binding TmpBenhNhan.CanNang, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="Cân nặng"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
                     <TextBox DockPanel.Dock="Top" Margin="5"
-                        Text="{Binding SDTNguoiThanh, UpdateSourceTrigger=PropertyChanged}"
+                        Text="{Binding TmpBenhNhan.SDTNguoiThan, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="SĐT Người thân"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
@@ -147,6 +162,13 @@
                                        FontWeight="Normal"/>
                         </Grid>
                     </Grid>
+
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction Command="{Binding SaveCommand}"
+                                                   CommandParameter="{Binding ElementName=comboBoxSEX}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
 
                 </Button>
 

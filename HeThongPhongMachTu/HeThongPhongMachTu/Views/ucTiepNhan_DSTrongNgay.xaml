@@ -100,7 +100,7 @@
                         </Grid>
 
                         <Grid Grid.Column="1">
-                            <Button MaxWidth="50" Margin="0" Padding="0"
+                            <Button MaxWidth="50" Margin="0" Padding="0" 
                                     Background="Transparent" BorderBrush="Transparent">
                                 <Image Source="../Images/findicon_gray.png"/>
                                 <i:Interaction.Triggers>
@@ -115,7 +115,8 @@
                     </Grid>
 
                     <Border BorderBrush="Gray" BorderThickness="1">
-                        <ListView x:Name="listViewDSTrongNgay" ItemsSource="{Binding ListBNTrongNgay,UpdateSourceTrigger=PropertyChanged}"
+                        <ListView x:Name="listViewDSTrongNgay" ItemsSource="{Binding ListBNTrongNgay,
+                            UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                               HorizontalContentAlignment="Center">
                         <ListView.Resources>
                             <Style TargetType="{x:Type GridViewColumnHeader}">
