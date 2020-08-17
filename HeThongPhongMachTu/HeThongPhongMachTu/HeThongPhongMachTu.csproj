@@ -96,6 +96,7 @@
     <Compile Include="ViewModels\NhaThuoc_ChoNhanThuocViewModel.cs" />
     <Compile Include="ViewModels\NhaThuoc_ThuocTrongKhoViewModel.cs" />
     <Compile Include="ViewModels\QuanLy_NhanVienViewModel.cs" />
+    <Compile Include="ViewModels\QuanLy_PhieuThuChiViewModel.cs" />
     <Compile Include="ViewModels\ThanhToanViewModel.cs" />
     <Compile Include="ViewModels\ThanhToan_ChoThanhToanViewModel.cs" />
     <Compile Include="ViewModels\ThanhToan_DaThanhToanViewModel.cs" />
