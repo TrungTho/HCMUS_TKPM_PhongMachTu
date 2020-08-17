@@ -52,8 +52,6 @@ namespace HeThongPhongMachTu.ViewModels
                 DataProvider.Instance.DB.SoKhamBenhs.Add(soKhamBenh);
                 DataProvider.Instance.DB.SaveChanges();
 
-
-
                 //Th
 
                 MessageBox.Show($"Đã thêm mới bệnh nhân:\n {TmpBenhNhan.MaBN} - {TmpBenhNhan.HoTen}", "Notification", MessageBoxButton.OK, MessageBoxImage.Information);
