@@ -4,6 +4,7 @@ using DevExpress.Mvvm.POCO;
 using HeThongPhongMachTu.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -81,6 +82,14 @@ namespace HeThongPhongMachTu.ViewModels
                 {
                     if (query.NgayThang == DateTime.Now.Date)
                     {
+                        DanhSachKham danhSachKham_1 = new DanhSachKham();
+                        danhSachKham_1.MaDS = query.MaDS;
+                        danhSachKham_1.NgayThang = DateTime.Now.Date;
+                        danhSachKham_1.SoLuong = query.SoLuong + 1;
+
+                        DataProvider.Instance.DB.DanhSachKhams.AddOrUpdate(danhSachKham_1);
+                        DataProvider.Instance.DB.SaveChanges();
+
                         CT_DanhSachKham cT_DanhSachKham = new CT_DanhSachKham();
                         cT_DanhSachKham.STT = DataProvider.Instance.DB.CT_DanhSachKham.ToList().Count() + 11;
                         cT_DanhSachKham.MaDS = query.MaDS;
