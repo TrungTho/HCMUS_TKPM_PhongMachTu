@@ -9,6 +9,7 @@
              xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
              mc:Ignorable="d" 
              DataContext="{StaticResource QuanLy_ThongKeVM}"
+             Background="White"
              d:DesignHeight="450" d:DesignWidth="800"
              
              >
@@ -164,24 +165,140 @@
                             </Grid>
 
                             <Border BorderBrush="Gray" BorderThickness="1">
-                                <ListView x:Name="listViewThongKe"
-                                          ItemsSource="{Binding ListThongKe, UpdateSourceTrigger=PropertyChanged}"
-                                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                              HorizontalContentAlignment="Center">
-                                    <ListView.Resources>
-                                        <Style TargetType="{x:Type GridViewColumnHeader}">
-                                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.Resources>
+                                        <Style TargetType="materialDesign:Card">
+                                            <Setter Property="Margin" Value="5"/>
                                         </Style>
-                                    </ListView.Resources>
-                                    <ListView.View>
-                                        <GridView>
-                                            <GridViewColumn Header="Tổng thu" Width="150" DisplayMemberBinding="{Binding TongThu}" />
-                                            <GridViewColumn Header="Tổng chi" Width="150" DisplayMemberBinding="{Binding TongChi}" />
-                                            <GridViewColumn Header="Số lượt khám" Width="150" DisplayMemberBinding="{Binding LuotKham}" />
-                                            <GridViewColumn Header="Số thuốc nhập" Width="150" DisplayMemberBinding="{Binding SLThuocNhap}" />
-                                        </GridView>
-                                    </ListView.View>
-                                </ListView>
+                                    </Grid.Resources>
+
+                                    <materialDesign:Card MaxHeight="200" Grid.Column="0"
+                                        Background="#03a9f4"
+                                        Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                        Padding="0"  Width="200">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <TextBlock Grid.Row="0" Margin="16 16 16 4" FontSize="20"
+                                                       Style="{StaticResource MaterialDesignHeadlineTextBlock}"> 
+                                                Tổng thu
+                                            </TextBlock>
+                                            <Separator
+                                                Grid.Row="1"
+                                                Style="{StaticResource MaterialDesignLightSeparator}" />
+                                            <TextBlock
+                                                FontSize="24"
+                                                Grid.Row="2"
+                                                Margin="16 0 16 8"
+                                                VerticalAlignment="Center"
+                                                HorizontalAlignment="Left"
+                                                Style="{StaticResource MaterialDesignBody2TextBlock}"
+                                                Text="{Binding thongke.TongThu,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}">
+                                            </TextBlock>
+                                            
+                                        </Grid>
+                                    </materialDesign:Card>
+
+                                    <materialDesign:Card MaxHeight="200" Grid.Column="1"
+                                        Background="#03a9f4"
+                                        Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                        Padding="0"  Width="200">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <TextBlock Grid.Row="0" Margin="16 16 16 4" FontSize="20"
+                                                       Style="{StaticResource MaterialDesignHeadlineTextBlock}"> 
+                                                Tổng chi
+                                            </TextBlock>
+                                            <Separator
+                                                Grid.Row="1"
+                                                Style="{StaticResource MaterialDesignLightSeparator}" />
+                                            <TextBlock
+                                                FontSize="24"
+                                                Grid.Row="2"
+                                                Margin="16 0 16 8"
+                                                VerticalAlignment="Center"
+                                                HorizontalAlignment="Left"
+                                                Style="{StaticResource MaterialDesignBody2TextBlock}"
+                                                Text="{Binding thongke.TongChi,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}">
+                                            </TextBlock>
+                                            
+                                        </Grid>
+                                    </materialDesign:Card>
+
+                                    <materialDesign:Card MaxHeight="200" Grid.Column="2"
+                                        Background="#03a9f4"
+                                        Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                        Padding="0"  Width="200">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <TextBlock Grid.Row="0" Margin="16 16 16 4" FontSize="20"
+                                                       Style="{StaticResource MaterialDesignHeadlineTextBlock}"> 
+                                                Lượt khám
+                                            </TextBlock>
+                                            <Separator
+                                                Grid.Row="1"
+                                                Style="{StaticResource MaterialDesignLightSeparator}" />
+                                            <TextBlock
+                                                FontSize="24"
+                                                Grid.Row="2"
+                                                Margin="16 0 16 8"
+                                                VerticalAlignment="Center"
+                                                HorizontalAlignment="Left"
+                                                Style="{StaticResource MaterialDesignBody2TextBlock}"
+                                                Text="{Binding thongke.LuotKham,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}">
+                                            </TextBlock>
+                                            
+                                        </Grid>
+                                    </materialDesign:Card>
+
+                                    <materialDesign:Card MaxHeight="200" Grid.Column="3"
+                                        Background="#03a9f4"
+                                        Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                        Padding="0"  Width="200">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <TextBlock Grid.Row="0" Margin="16 16 16 4" FontSize="20"
+                                                       Style="{StaticResource MaterialDesignHeadlineTextBlock}"> 
+                                                Số thuốc nhập
+                                            </TextBlock>
+                                            <Separator
+                                                Grid.Row="1"
+                                                Style="{StaticResource MaterialDesignLightSeparator}" />
+                                            <TextBlock
+                                                FontSize="24"
+                                                Grid.Row="2"
+                                                Margin="16 0 16 8"
+                                                VerticalAlignment="Center"
+                                                HorizontalAlignment="Left"
+                                                Style="{StaticResource MaterialDesignBody2TextBlock}"
+                                                Text="{Binding thongke.SLThuocNhap,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}">
+                                            </TextBlock>
+                                            
+                                        </Grid>
+                                    </materialDesign:Card>
+                                    
+                                </Grid>
                             </Border>
                         </DockPanel>
                     </Grid>
