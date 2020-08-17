@@ -32,7 +32,7 @@
       <PropertyRef Name="MaDS" />
       <PropertyRef Name="MaBN" />
     </Key>
-    <Property Name="STT" Type="int" Nullable="false" />
+    <Property Name="STT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="MaDS" Type="int" Nullable="false" />
     <Property Name="MaBN" Type="nchar" MaxLength="20" Nullable="false" />
     <Property Name="ThoiGian" Type="datetime" Nullable="false" />

@@ -26,7 +26,7 @@ namespace HeThongPhongMachTu.ViewModels
             TmpBenhNhan = new BenhNhan();
             TmpBenhNhan.MaBN = DateTime.UtcNow.Date.ToString("d");
 
-            int idSTT = DataProvider.Instance.DB.DanhSachKhams.ToList().Count() + 1;
+            int idSTT = DataProvider.Instance.DB.CT_DanhSachKham.ToList().Count() + 11;
 
             TmpBenhNhan.MaBN = "BN" + TmpBenhNhan.MaBN +idSTT.ToString();
             SaveCommand = new RelayCommand<ComboBox>((p) => { return p == null ? false : true; }, (p) => SaveData(p));
@@ -82,7 +82,7 @@ namespace HeThongPhongMachTu.ViewModels
                     if (query.NgayThang == DateTime.Now.Date)
                     {
                         CT_DanhSachKham cT_DanhSachKham = new CT_DanhSachKham();
-                        cT_DanhSachKham.STT = 10;
+                        cT_DanhSachKham.STT = DataProvider.Instance.DB.CT_DanhSachKham.ToList().Count() + 11;
                         cT_DanhSachKham.MaDS = query.MaDS;
                         cT_DanhSachKham.MaBN = TmpBenhNhan.MaBN;
                         cT_DanhSachKham.ThoiGian = DateTime.Now;
