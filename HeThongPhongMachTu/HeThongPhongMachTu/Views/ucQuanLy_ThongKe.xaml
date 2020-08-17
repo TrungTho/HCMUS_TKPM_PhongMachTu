@@ -172,13 +172,8 @@
                                         <ColumnDefinition/>
                                         <ColumnDefinition/>
                                     </Grid.ColumnDefinitions>
-                                    <Grid.Resources>
-                                        <Style TargetType="materialDesign:Card">
-                                            <Setter Property="Margin" Value="5"/>
-                                        </Style>
-                                    </Grid.Resources>
 
-                                    <materialDesign:Card MaxHeight="200" Grid.Column="0"
+                                    <materialDesign:Card MaxHeight="200" Grid.Column="0" Margin="5"
                                         Background="#03a9f4"
                                         Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                         Padding="0"  Width="200">
@@ -189,7 +184,7 @@
                                                 <RowDefinition Height="Auto" />
                                             </Grid.RowDefinitions>
                                             <TextBlock Grid.Row="0" Margin="16 16 16 4" FontSize="20"
-                                                       Style="{StaticResource MaterialDesignHeadlineTextBlock}"> 
+                                                       > 
                                                 Tổng thu
                                             </TextBlock>
                                             <Separator
@@ -208,7 +203,7 @@
                                         </Grid>
                                     </materialDesign:Card>
 
-                                    <materialDesign:Card MaxHeight="200" Grid.Column="1"
+                                    <materialDesign:Card MaxHeight="200" Grid.Column="1" Margin="5"
                                         Background="#03a9f4"
                                         Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                         Padding="0"  Width="200">
@@ -219,7 +214,7 @@
                                                 <RowDefinition Height="Auto" />
                                             </Grid.RowDefinitions>
                                             <TextBlock Grid.Row="0" Margin="16 16 16 4" FontSize="20"
-                                                       Style="{StaticResource MaterialDesignHeadlineTextBlock}"> 
+                                                       > 
                                                 Tổng chi
                                             </TextBlock>
                                             <Separator
@@ -238,7 +233,7 @@
                                         </Grid>
                                     </materialDesign:Card>
 
-                                    <materialDesign:Card MaxHeight="200" Grid.Column="2"
+                                    <materialDesign:Card MaxHeight="200" Grid.Column="2" Margin="5"
                                         Background="#03a9f4"
                                         Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                         Padding="0"  Width="200">
@@ -249,7 +244,7 @@
                                                 <RowDefinition Height="Auto" />
                                             </Grid.RowDefinitions>
                                             <TextBlock Grid.Row="0" Margin="16 16 16 4" FontSize="20"
-                                                       Style="{StaticResource MaterialDesignHeadlineTextBlock}"> 
+                                                       > 
                                                 Lượt khám
                                             </TextBlock>
                                             <Separator
@@ -268,7 +263,7 @@
                                         </Grid>
                                     </materialDesign:Card>
 
-                                    <materialDesign:Card MaxHeight="200" Grid.Column="3"
+                                    <materialDesign:Card MaxHeight="200" Grid.Column="3" Margin="5"
                                         Background="#03a9f4"
                                         Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                         Padding="0"  Width="200">
@@ -279,7 +274,7 @@
                                                 <RowDefinition Height="Auto" />
                                             </Grid.RowDefinitions>
                                             <TextBlock Grid.Row="0" Margin="16 16 16 4" FontSize="20"
-                                                       Style="{StaticResource MaterialDesignHeadlineTextBlock}"> 
+                                                       > 
                                                 Số thuốc nhập
                                             </TextBlock>
                                             <Separator
