@@ -222,3 +222,5 @@ D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. 
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\HeThongPhongMachTu.exe
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\HeThongPhongMachTu.pdb
 D:\0. HCMUS\OneDrive - VNU-HCMUS\1. HCMUS\3. Junior\Semester2\SoftwareDesign\3. Projects\Coding\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\HeThongPhongMachTu.csprojAssemblyReference.cache
+D:\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucTiepNhan_BenhNhanCu.g.cs
+D:\HCMUS_TKPM_PhongMachTu\HeThongPhongMachTu\HeThongPhongMachTu\obj\Debug\Views\ucTiepNhan_BenhNhanCu.baml
