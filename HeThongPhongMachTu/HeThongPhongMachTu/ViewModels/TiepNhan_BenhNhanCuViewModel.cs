@@ -3,6 +3,7 @@ using DevExpress.Mvvm.POCO;
 using HeThongPhongMachTu.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,29 +44,14 @@ namespace HeThongPhongMachTu.ViewModels
         {
             try
             {
-                //Cap nhat du lieu len db
+                if (p.Text == "Nam")
+                    TmpBenhNhan.GioiTinh = true;
+                else
+                    TmpBenhNhan.GioiTinh = false;
 
-                //if (p.Text == "Nam")
-                //    TmpBenhNhan.GioiTinh = true;
-                //else
-                //    TmpBenhNhan.GioiTinh = false;
-
-                //SoKhamBenh soKhamBenh = new SoKhamBenh();
-                //soKhamBenh.MaBN = TmpBenhNhan.MaBN;
-                //soKhamBenh.NgayLap = DateTime.UtcNow.Date;
-
-                ////add data to table BenhNhan
-                //DataProvider.Instance.DB.BenhNhans.Add(TmpBenhNhan);
-                //DataProvider.Instance.DB.SaveChanges();
-
-                ////add data to table SoKhamBenh
-                //DataProvider.Instance.DB.SoKhamBenhs.Add(soKhamBenh);
-                //DataProvider.Instance.DB.SaveChanges();
-
-                ////Th
-
-                //MessageBox.Show($"Đã thêm mới bệnh nhân:\n {TmpBenhNhan.MaBN} - {TmpBenhNhan.HoTen}", "Notification", MessageBoxButton.OK, MessageBoxImage.Information);
-
+                //add data to table BenhNhan
+                DataProvider.Instance.DB.BenhNhans.AddOrUpdate(TmpBenhNhan);
+                DataProvider.Instance.DB.SaveChanges();
             }
             catch (Exception e)
             {
