@@ -128,8 +128,8 @@
                                 <GridViewColumn Header="STT" Width="60" DisplayMemberBinding="{Binding STT}" />
                                 <GridViewColumn Header="Mã BN" Width="100" DisplayMemberBinding="{Binding MaBN}" />
                                 <GridViewColumn Header="Họ và tên" Width="200" DisplayMemberBinding="{Binding HoTen}" />
-                                <GridViewColumn Header="Tuổi" Width="60" DisplayMemberBinding="{Binding Mail}" />
-                                <GridViewColumn Header="Giới tính" Width="150" DisplayMemberBinding="{Binding GioiTinh}" />
+                                <GridViewColumn Header="Tuổi" Width="60" DisplayMemberBinding="{Binding Tuoi}" />
+                                <GridViewColumn Header="Giới tính" Width="150" DisplayMemberBinding="{Binding SEX}" />
                                 <GridViewColumn Header="Địa chỉ" Width="200" DisplayMemberBinding="{Binding DiaChi}"/>
                             </GridView>
                         </ListView.View>

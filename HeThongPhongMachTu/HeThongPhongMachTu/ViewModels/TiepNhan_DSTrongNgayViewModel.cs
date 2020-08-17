@@ -27,6 +27,26 @@ namespace HeThongPhongMachTu.ViewModels
         public TiepNhan_DSTrongNgayViewModel()
         {
             SearchCommand = new RelayCommand<TextBox>((p) => { return p==null?false : true; }, (p) =>LoadDataToListView(p));
+
+            //itemsource for listview
+            ListBNTrongNgay = new ObservableCollection<BenhNhan>();
+
+            //select all record in benhnhan
+            var queries = DataProvider.Instance.DB.BenhNhans.ToList();
+
+            //modify some attribute to show in listview
+            int stt = 0;
+            foreach (var query in queries)
+            {
+                stt++;
+                BenhNhan benhNhan = new BenhNhan();
+                benhNhan = query;
+                benhNhan.STT = stt;
+                benhNhan.Tuoi = (DateTime.Now.Year - query.NgaySinh.Year).ToString();
+                benhNhan.SEX = query.GioiTinh == true ? "Nam" : "Nữ";
+
+                ListBNTrongNgay.Add(benhNhan);
+            }
         }
 
         void LoadDataToListView(TextBox p)

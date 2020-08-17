@@ -7,6 +7,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
              mc:Ignorable="d" 
+             DataContext="{StaticResource KhamBenh_DaKhamVM}"
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
         <Style TargetType="Image">
@@ -71,9 +72,13 @@
                             </Grid>
 
                             <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="49*"/>
+                                    <ColumnDefinition Width="11*"/>
+                                </Grid.ColumnDefinitions>
                                 <Label Content="Bệnh nhân đã khám"
                                        Foreground="White"
-                                       FontWeight="Bold"/>
+                                       FontWeight="Bold" Grid.ColumnSpan="2"/>
                             </Grid>
 
                         </Grid>
@@ -95,7 +100,8 @@
                     </ComboBox>
 
                     <Border BorderBrush="Gray" BorderThickness="1">
-                        <ListView x:Name="listViewDSDaKham" 
+                        <ListView ItemsSource="{Binding ListbenhNhans, UpdateSourceTrigger=PropertyChanged}"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" x:Name="listViewDSDaKham" 
                               HorizontalContentAlignment="Center">
                             <ListView.Resources>
                                 <Style TargetType="{x:Type GridViewColumnHeader}">
@@ -107,8 +113,8 @@
                                     <GridViewColumn Header="STT" Width="60" DisplayMemberBinding="{Binding STT}" />
                                     <GridViewColumn Header="Mã BN" Width="100" DisplayMemberBinding="{Binding MaBN}" />
                                     <GridViewColumn Header="Họ và tên" Width="200" DisplayMemberBinding="{Binding HoTen}" />
-                                    <GridViewColumn Header="Tuổi" Width="60" DisplayMemberBinding="{Binding Mail}" />
-                                    <GridViewColumn Header="Giới tính" Width="150" DisplayMemberBinding="{Binding GioiTinh}" />
+                                    <GridViewColumn Header="Tuổi" Width="60" DisplayMemberBinding="{Binding Tuoi}" />
+                                    <GridViewColumn Header="Giới tính" Width="150" DisplayMemberBinding="{Binding SEX}" />
                                     <GridViewColumn Header="Địa chỉ" Width="200" DisplayMemberBinding="{Binding DiaChi}"/>
                                 </GridView>
                             </ListView.View>

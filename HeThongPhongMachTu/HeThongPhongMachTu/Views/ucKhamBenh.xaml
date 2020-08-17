@@ -151,7 +151,7 @@
             <dxmvvm:Interaction.Behaviors>
                 <dxwuin:FrameNavigationService />
             </dxmvvm:Interaction.Behaviors>
-            <local:ucKhamBenh_ChoKham></local:ucKhamBenh_ChoKham>
+            <local:ucKhamBenh_ChoKham Loaded="ucKhamBenh_ChoKham_Loaded"></local:ucKhamBenh_ChoKham>
         </dxwui:NavigationFrame>
 
     </DockPanel>

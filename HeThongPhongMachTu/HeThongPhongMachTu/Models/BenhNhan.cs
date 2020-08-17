@@ -23,6 +23,7 @@ namespace HeThongPhongMachTu.Models
         public int STT { get; set; }
         public string SEX { get; set; }
 
+        public string Tuoi { get; set; }
         public string MaBN { get; set; }
         public string HoTen { get; set; }
         public System.DateTime NgaySinh { get; set; }

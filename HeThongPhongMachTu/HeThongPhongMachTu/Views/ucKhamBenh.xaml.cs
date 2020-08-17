@@ -24,5 +24,10 @@ namespace HeThongPhongMachTu.Views
         {
             InitializeComponent();
         }
+
+        private void ucKhamBenh_ChoKham_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
