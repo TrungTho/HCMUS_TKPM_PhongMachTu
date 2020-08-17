@@ -9,7 +9,9 @@
              xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
              mc:Ignorable="d" 
              DataContext="{StaticResource QuanLy_ThongKeVM}"
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             
+             >
     <UserControl.Resources>
         <Style TargetType="Image">
             <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
@@ -124,7 +126,6 @@
                 <Grid >
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
-                        <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid Grid.Column="0">
 
@@ -158,12 +159,14 @@
                                         </i:EventTrigger>
                                     </i:Interaction.Triggers>
                                 </DatePicker>
-                                
-                                
+
+
                             </Grid>
 
                             <Border BorderBrush="Gray" BorderThickness="1">
-                                <ListView x:Name="listViewDSChoKham" 
+                                <ListView x:Name="listViewThongKe"
+                                          ItemsSource="{Binding ListThongKe, UpdateSourceTrigger=PropertyChanged}"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                               HorizontalContentAlignment="Center">
                                     <ListView.Resources>
                                         <Style TargetType="{x:Type GridViewColumnHeader}">
@@ -172,10 +175,10 @@
                                     </ListView.Resources>
                                     <ListView.View>
                                         <GridView>
-                                            <GridViewColumn Header="Mã" Width="50" DisplayMemberBinding="{Binding MaPhieu}" />
-                                            <GridViewColumn Header="Thời gian" Width="100" DisplayMemberBinding="{Binding NgayLap}" />
-                                            <GridViewColumn Header="Loại" Width="100" DisplayMemberBinding="{Binding LoaiPhieu}" />
-                                            <GridViewColumn Header="Giá trị" Width="60" DisplayMemberBinding="{Binding GiaTri}" />
+                                            <GridViewColumn Header="Tổng thu" Width="150" DisplayMemberBinding="{Binding TongThu}" />
+                                            <GridViewColumn Header="Tổng chi" Width="150" DisplayMemberBinding="{Binding TongChi}" />
+                                            <GridViewColumn Header="Số lượt khám" Width="150" DisplayMemberBinding="{Binding LuotKham}" />
+                                            <GridViewColumn Header="Số thuốc nhập" Width="150" DisplayMemberBinding="{Binding SLThuocNhap}" />
                                         </GridView>
                                     </ListView.View>
                                 </ListView>
@@ -183,11 +186,6 @@
                         </DockPanel>
                     </Grid>
 
-                    <!--bieu do thong ke-->
-
-                    <Grid Grid.Column="1">
-                        <TextBlock Text="biểu đồ thống kê"/>
-                    </Grid>
                 </Grid>
 
             </Grid>

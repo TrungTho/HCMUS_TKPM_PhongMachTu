@@ -1,4 +1,5 @@
-﻿using DevExpress.Mvvm;
+﻿using DevExpress.Internal.WinApi.Windows.UI.Notifications;
+using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
 using HeThongPhongMachTu.Models;
 using System;
@@ -52,10 +53,46 @@ namespace HeThongPhongMachTu.ViewModels
                 DataProvider.Instance.DB.SoKhamBenhs.Add(soKhamBenh);
                 DataProvider.Instance.DB.SaveChanges();
 
+                
+                //add DanhSachKham if not exist
+                int count = 0;
+                var queries = DataProvider.Instance.DB.DanhSachKhams.ToList();
 
+                foreach (var query in queries)
+                {
+                    if (query.NgayThang == DateTime.Now.Date)
+                        count++;
+                }
 
-                //Th
+                if (count == 0)
+                {
+                    DanhSachKham danhSachKham = new DanhSachKham();
+                    danhSachKham.NgayThang = DateTime.Now.Date;
+                    danhSachKham.SoLuong = 0;
 
+                    DataProvider.Instance.DB.DanhSachKhams.Add(danhSachKham);
+                    DataProvider.Instance.DB.SaveChanges();
+                }
+
+                var queries_1 = DataProvider.Instance.DB.DanhSachKhams.ToList();
+
+                // add CT_DanhSachKham
+                foreach (var query in queries_1)
+                {
+                    if (query.NgayThang == DateTime.Now.Date)
+                    {
+                        CT_DanhSachKham cT_DanhSachKham = new CT_DanhSachKham();
+                        cT_DanhSachKham.STT = 10;
+                        cT_DanhSachKham.MaDS = query.MaDS;
+                        cT_DanhSachKham.MaBN = TmpBenhNhan.MaBN;
+                        cT_DanhSachKham.ThoiGian = DateTime.Now;
+                        cT_DanhSachKham.MaNV = "1";
+                        cT_DanhSachKham.TrangThai = true;
+
+                        DataProvider.Instance.DB.CT_DanhSachKham.Add(cT_DanhSachKham);
+                        DataProvider.Instance.DB.SaveChanges();
+                    }    
+                }
                 MessageBox.Show($"Đã thêm mới bệnh nhân:\n {TmpBenhNhan.MaBN} - {TmpBenhNhan.HoTen}", "Notification", MessageBoxButton.OK, MessageBoxImage.Information);
 
             }

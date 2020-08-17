@@ -21,6 +21,7 @@ namespace HeThongPhongMachTu.Models
         }
     
         public int MaDS { get; set; }
+        public string MaNV { get; set; }
         public System.DateTime NgayThang { get; set; }
         public int SoLuong { get; set; }
     

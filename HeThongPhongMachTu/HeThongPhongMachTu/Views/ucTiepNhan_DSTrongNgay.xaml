@@ -143,29 +143,7 @@
         </Grid>
 
         <Grid Grid.Row="1" Background="#6A6868" Margin="0">
-            <DockPanel LastChildFill="False" HorizontalAlignment="Center">
-                <Button Background="Transparent" BorderThickness="0"
-                        Margin="0" Width="auto" Height="auto">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-
-                        <Grid Grid.Row="0">
-                            <Image HorizontalAlignment="Center"
-                                Source="../Images/editicon.PNG" Width="50" />
-                        </Grid>
-
-                        <Grid Grid.Row="1">
-                            <Label Content="Sửa" HorizontalAlignment="Center"
-                                   Foreground="White"
-                                       FontWeight="Normal"/>
-                        </Grid>
-                    </Grid>
-
-                </Button>
-            </DockPanel>
+            <DockPanel LastChildFill="False" HorizontalAlignment="Center"/>
 
         </Grid>
     </Grid>
