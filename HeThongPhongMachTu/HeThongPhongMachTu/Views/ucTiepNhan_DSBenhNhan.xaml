@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:HeThongPhongMachTu.Views"
             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              DataContext="{StaticResource TiepNhanDSBenhNhanVM}"
@@ -86,15 +87,32 @@
 
             <Grid Grid.Column="1">
                 <DockPanel LastChildFill="True">
-                    <ComboBox x:Name="comboBoxTimBNCu" Margin="0 5 0 0"
-                        DockPanel.Dock="Top" materialDesign:HintAssist.Hint="Search"
-                          IsEditable="True"
-                          materialDesign:HintAssist.HintOpacity=".26">
-                        <ComboBoxItem Content="Apple"/>
-                        <ComboBoxItem Content="Banana"/>
-                        <ComboBoxItem Content="Pear"/>
-                        <ComboBoxItem Content="Orange"/>
-                    </ComboBox>
+                    <Grid DockPanel.Dock="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="9*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0">
+                            <TextBox Name="searchBarData"
+                        materialDesign:HintAssist.Hint="Tìm kiếm"
+                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        </Grid>
+
+                        <Grid Grid.Column="1">
+                            <Button MaxWidth="50" Margin="0" Padding="0"
+                                    Background="Transparent" BorderBrush="Transparent">
+                                <Image Source="../Images/findicon_gray.png"/>
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Click">
+                                        <i:InvokeCommandAction Command="{Binding SearchCommand}"
+                                                               CommandParameter="{Binding ElementName=searchBarData}"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </Button>
+                        </Grid>
+
+                    </Grid>
 
                     <Border BorderBrush="Gray" BorderThickness="1">
                         <ListView ItemsSource="{Binding ListbenhNhans, UpdateSourceTrigger=PropertyChanged}"

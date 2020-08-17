@@ -17,7 +17,7 @@ namespace HeThongPhongMachTu.ViewModels
     {
         private ObservableCollection<BenhNhan> _listbenhNhans;
 
-        public ObservableCollection<BenhNhan> ListbenhNhans { get => _listbenhNhans; set => _listbenhNhans = value; }
+        public ObservableCollection<BenhNhan> ListbenhNhans { get => _listbenhNhans; set { _listbenhNhans = value; OnPropertyChanged(); } }
 
         public TiepNhan_DSBenhNhanViewModel()
         {

@@ -86,22 +86,36 @@
 
             <Grid Grid.Column="1">
                 <DockPanel LastChildFill="True">
-                    <ComboBox x:Name="comboBoxThemBNVaoHangDoi" Margin="0 5 0 0"
-                        DockPanel.Dock="Top" materialDesign:HintAssist.Hint="Search"
-                          IsEditable="True" ItemsSource="{Binding ListbenhNhans}"
-                              DisplayMemberPath="{Binding MaBN}"
-                              SelectedValuePath="{Binding MaBN}"
-                          materialDesign:HintAssist.HintOpacity=".26">
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="GotFocus">
-                                <i:InvokeCommandAction Command="{Binding searchbarFocusCommand}"/>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
 
-                    </ComboBox>
+                    <Grid DockPanel.Dock="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="9*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0">
+                            <TextBox Name="searchBarData"
+                        materialDesign:HintAssist.Hint="Tìm kiếm"
+                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        </Grid>
+
+                        <Grid Grid.Column="1">
+                            <Button MaxWidth="50" Margin="0" Padding="0"
+                                    Background="Transparent" BorderBrush="Transparent">
+                                <Image Source="../Images/findicon_gray.png"/>
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Click">
+                                        <i:InvokeCommandAction Command="{Binding SearchCommand}"
+                                                               CommandParameter="{Binding ElementName=searchBarData}"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </Button>
+                        </Grid>
+                        
+                    </Grid>
 
                     <Border BorderBrush="Gray" BorderThickness="1">
-                        <ListView x:Name="listViewDSTrongNgay" 
+                        <ListView x:Name="listViewDSTrongNgay" ItemsSource="{Binding ListBNTrongNgay,UpdateSourceTrigger=PropertyChanged}"
                               HorizontalContentAlignment="Center">
                         <ListView.Resources>
                             <Style TargetType="{x:Type GridViewColumnHeader}">

@@ -95,6 +95,7 @@
     <Compile Include="ViewModels\KhamBenh_DaKhamViewModel.cs" />
     <Compile Include="ViewModels\ThanhToanViewModel.cs" />
     <Compile Include="ViewModels\TiepNhanViewModel.cs" />
+    <Compile Include="ViewModels\TiepNhan_BenhNhanMoiViewModel.cs" />
     <Compile Include="ViewModels\TiepNhan_DSBenhNhanViewModel.cs" />
     <Compile Include="ViewModels\TiepNhan_DSTrongNgayViewModel.cs" />
     <Compile Include="Views\ucKhamBenh.xaml.cs">
