@@ -24,5 +24,10 @@ namespace HeThongPhongMachTu.Views
         {
             InitializeComponent();
         }
+
+        private void listViewChoThanhToan_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

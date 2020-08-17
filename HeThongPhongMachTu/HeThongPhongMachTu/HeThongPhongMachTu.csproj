@@ -93,7 +93,10 @@
     <Compile Include="ViewModels\KhamBenhViewModel.cs" />
     <Compile Include="ViewModels\KhamBenh_ChoKhamViewModel.cs" />
     <Compile Include="ViewModels\KhamBenh_DaKhamViewModel.cs" />
+    <Compile Include="ViewModels\NhaThuoc_ChoNhanThuocViewModel.cs" />
     <Compile Include="ViewModels\ThanhToanViewModel.cs" />
+    <Compile Include="ViewModels\ThanhToan_ChoThanhToanViewModel.cs" />
+    <Compile Include="ViewModels\ThanhToan_DaThanhToanViewModel.cs" />
     <Compile Include="ViewModels\TiepNhanViewModel.cs" />
     <Compile Include="ViewModels\TiepNhan_BenhNhanMoiViewModel.cs" />
     <Compile Include="ViewModels\TiepNhan_DSBenhNhanViewModel.cs" />
