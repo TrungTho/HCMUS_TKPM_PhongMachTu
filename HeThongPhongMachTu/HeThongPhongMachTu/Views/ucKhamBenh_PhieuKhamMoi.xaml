@@ -56,25 +56,25 @@
                     </Grid.ColumnDefinitions>
 
                     <TextBox Grid.Column="0" Margin="5 0 5 0" IsEnabled="False"
-                             Text="{Binding TmpBN.MaBN, UpdateSourceTrigger=PropertyChanged,Mode=OneWay}"
+                             Text="{Binding TmpBN.MaBN, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="Mã BN"
                         Opacity="1"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
                     <TextBox Grid.Column="1" Margin="5 0 5 0" IsEnabled="False"
-                             Text="{Binding TmpBN.HoTen, UpdateSourceTrigger=PropertyChanged,Mode=OneWay}"
+                             Text="{Binding TmpBN.HoTen, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="Họ tên"
                         Opacity="1"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
                     <TextBox Grid.Column="2" Margin="5 0 5 0" IsEnabled="False"
-                             Text="{Binding TmpBN.Tuoi, UpdateSourceTrigger=PropertyChanged,Mode=OneWay}"
+                             Text="{Binding TmpBN.Tuoi, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="Tuổi"
                         Opacity="1"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
                     <TextBox Grid.Column="3" Margin="5 0 5 0" IsEnabled="False"
-                             Text="{Binding TmpBN.SEX, UpdateSourceTrigger=PropertyChanged,Mode=OneWay}"
+                             Text="{Binding TmpBN.SEX, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="Giới tính"
                         Opacity="1"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
@@ -90,12 +90,12 @@
 
                     <TextBox Grid.Column="0" Margin="5 0 5 0" 
                              IsEnabled="False" 
-                             Text="{Binding TmpBN.DiaChi, UpdateSourceTrigger=PropertyChanged,Mode=OneWay}"
+                             Text="{Binding TmpBN.DiaChi, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="Địa chỉ"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="2" />
 
                     <TextBox Grid.Column="2" Margin="5 0 5 0" IsEnabled="False"
-                             Text="{Binding TmpBN.NgheNghiep, UpdateSourceTrigger=PropertyChanged,Mode=OneWay}"
+                             Text="{Binding TmpBN.NgheNghiep, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="Nghề nghiệp"
                         Opacity="1"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
@@ -111,7 +111,7 @@
 
                     <TextBox Margin="5 0 5 0"
                         Name="textBoxChiDinh" ForceCursor="True"
-                             Text="{Binding ChanDoan, UpdateSourceTrigger=PropertyChanged,Mode=OneWay}"
+                             Text="{Binding TmpPhieuKham.ChanDoan, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="Chẩn đoán"
                         Opacity="1"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
@@ -137,13 +137,13 @@
                             </Grid.ColumnDefinitions>
 
                             <TextBox Grid.Column="0" Margin="5 0 5 0"
-                                     Text="{Binding TenThuoc, UpdateSourceTrigger=PropertyChanged,Mode=OneWay}"
+                                     Text="{Binding TmpChiDinh.TenThuoc, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                                      materialDesign:HintAssist.Hint="Chỉ định"
                                      Opacity="1"
                                      Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
                             <TextBox Grid.Column="1" Margin="5 0 5 0"
-                                     Text="{Binding SoLuong, UpdateSourceTrigger=PropertyChanged,Mode=OneWay}"
+                                     Text="{Binding TmpChiDinh.SoLuong, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                                      materialDesign:HintAssist.Hint="Số lượng"
                                      Opacity="1"
                                      Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
@@ -151,8 +151,8 @@
                         </Grid>
 
                         <TextBox Grid.Row="1" Margin="5 0 5 0"
-                        Text="{Binding GhiChu, UpdateSourceTrigger=PropertyChanged,Mode=OneWay}"         
-                        materialDesign:HintAssist.Hint="Ghi Chú"
+                        Text="{Binding TmpChiDinh.GhiChu, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"         
+                        materialDesign:HintAssist.Hint="Ghi chú: Số lần uống / ngày"
                         Opacity="1"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
@@ -172,8 +172,8 @@
 
                                 <i:Interaction.Triggers>
                                     <i:EventTrigger EventName="Click">
-                                        <i:InvokeCommandAction Command="{Binding SaveCommand}"
-                                                   />
+                                        <i:InvokeCommandAction Command="{Binding InsertToListViewCommand}"
+                                                               CommandParameter="{Binding ElementName=listViewChiDinhDungThuoc}"/>
                                     </i:EventTrigger>
                                 </i:Interaction.Triggers>
 
@@ -189,7 +189,7 @@
             <Border  Grid.Row="1"
                 BorderBrush="Gray" BorderThickness="1">
                 <ListView x:Name="listViewChiDinhDungThuoc" 
-                                  ItemsSource="{Binding ListThuoc, UpdateSourceTrigger=PropertyChanged}"
+                                  ItemsSource="{Binding ListChiDinhThuoc, UpdateSourceTrigger=PropertyChanged}"
                                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                               HorizontalContentAlignment="Center">
                     <ListView.Resources>

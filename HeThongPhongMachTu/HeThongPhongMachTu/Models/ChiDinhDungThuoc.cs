@@ -14,8 +14,10 @@ namespace HeThongPhongMachTu.Models
     
     public partial class ChiDinhDungThuoc
     {
+        public int STT { get; set; }
         public string MaPK { get; set; }
         public string MaThuoc { get; set; }
+        public string TenThuoc { get; set; }
         public int SoLuong { get; set; }
         public string MaDV { get; set; }
         public string GhiChu { get; set; }
