@@ -138,6 +138,12 @@
                                         NavigateTo="ucKhamBenh_PhieuKhamMoi"
                     Background="Transparent" BorderThickness="0"
                         Margin="0" Width="auto" Height="auto">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction Command="{Binding UpdateSelectedBenhNhan}"
+                                                               CommandParameter="{Binding ElementName=listViewDSChoKham}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition/>
