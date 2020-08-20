@@ -25,12 +25,25 @@ namespace HeThongPhongMachTu.ViewModels
         public TiepNhan_BenhNhanMoiViewModel()
         {
             TmpBenhNhan = new BenhNhan();
-            TmpBenhNhan.MaBN = DateTime.UtcNow.Date.ToString("d");
+            
 
+            TmpBenhNhan.MaBN = generateMaBN();
+            SaveCommand = new RelayCommand<ComboBox>((p) => { return p == null ? false : true; }, (p) => SaveData(p));
+        }
+
+        string generateMaBN()
+        {
+            //get Today and format it
+            string tmpDate = DateTime.UtcNow.Date.ToString("dd/MM/yyyy");
+            tmpDate = tmpDate.Substring(0, 2) + tmpDate.Substring(3, 2) + tmpDate.Substring(6);
+
+            //get stt in ct_dsk
             int idSTT = DataProvider.Instance.DB.CT_DanhSachKham.ToList().Count() + 11;
 
-            TmpBenhNhan.MaBN = "BN" + TmpBenhNhan.MaBN +idSTT.ToString();
-            SaveCommand = new RelayCommand<ComboBox>((p) => { return p == null ? false : true; }, (p) => SaveData(p));
+            //combine them to new id of BenhNhan
+            tmpDate = "BN" + tmpDate + idSTT.ToString();
+
+            return tmpDate;
         }
 
         void SaveData(ComboBox p)
@@ -104,6 +117,7 @@ namespace HeThongPhongMachTu.ViewModels
                 }
                 MessageBox.Show($"Đã thêm mới bệnh nhân:\n {TmpBenhNhan.MaBN} - {TmpBenhNhan.HoTen}", "Notification", MessageBoxButton.OK, MessageBoxImage.Information);
 
+                TmpBenhNhan.MaBN = generateMaBN();
             }
             catch (Exception e)
             {

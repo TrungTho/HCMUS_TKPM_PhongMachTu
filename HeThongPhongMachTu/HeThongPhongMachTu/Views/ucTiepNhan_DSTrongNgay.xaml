@@ -97,6 +97,7 @@
                             <TextBox Name="searchBarData"
                         materialDesign:HintAssist.Hint="Tìm kiếm"
                               Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
                         </Grid>
 
                         <Grid Grid.Column="1">

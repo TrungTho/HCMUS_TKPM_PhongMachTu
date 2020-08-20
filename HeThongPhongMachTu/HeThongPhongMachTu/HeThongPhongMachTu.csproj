@@ -93,6 +93,7 @@
     <Compile Include="ViewModels\KhamBenhViewModel.cs" />
     <Compile Include="ViewModels\KhamBenh_ChoKhamViewModel.cs" />
     <Compile Include="ViewModels\KhamBenh_DaKhamViewModel.cs" />
+    <Compile Include="ViewModels\KhamBenh_PhieuKhamMoiViewModel.cs" />
     <Compile Include="ViewModels\NhaThuoc_ChoNhanThuocViewModel.cs" />
     <Compile Include="ViewModels\NhaThuoc_NhapThuocViewModel.cs" />
     <Compile Include="ViewModels\NhaThuoc_ThuocTrongKhoViewModel.cs" />
@@ -115,6 +116,9 @@
     </Compile>
     <Compile Include="Views\ucKhamBenh_DaKham.xaml.cs">
       <DependentUpon>ucKhamBenh_DaKham.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucKhamBenh_PhieuKhamMoi.xaml.cs">
+      <DependentUpon>ucKhamBenh_PhieuKhamMoi.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ucNhapThuoc.xaml.cs">
       <DependentUpon>ucNhapThuoc.xaml</DependentUpon>
@@ -277,6 +281,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ucKhamBenh_DaKham.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucKhamBenh_PhieuKhamMoi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

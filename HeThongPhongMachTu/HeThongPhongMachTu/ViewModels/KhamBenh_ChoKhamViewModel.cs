@@ -1,4 +1,5 @@
-﻿using HeThongPhongMachTu.Models;
+﻿using DevExpress.Xpf.WindowsUI;
+using HeThongPhongMachTu.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -6,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace HeThongPhongMachTu.ViewModels
@@ -16,8 +18,23 @@ namespace HeThongPhongMachTu.ViewModels
 
         public ObservableCollection<BenhNhan> ListbenhNhans { get => _listbenhNhans; set { _listbenhNhans = value; OnPropertyChanged(); } }
 
+        public static BenhNhan _selectedBenhNhan;
+
+        public ICommand DisablePKMoiButtonCommand { get; set; }
+        public ICommand EnablePKMoiButtonCommand { get; set; }
+        public ICommand UpdateSelectedBenhNhan { get; set; }
+
         public KhamBenh_ChoKhamViewModel()
         {
+            //disable button PhieuKhamMoi before any listview item is selected
+            DisablePKMoiButtonCommand = new RelayCommand<NavigationButton>((p) => { return p == null ? false : true; }, (p) => p.IsEnabled = false);
+            //enable button PhieuKhamMoi after any listview item is selected
+            EnablePKMoiButtonCommand = new RelayCommand<NavigationButton>((p) => { return p == null ? false : true; }, (p) => p.IsEnabled = true);
+            //update listview selected item to sending if user want to choose
+            UpdateSelectedBenhNhan = new RelayCommand<ListView>((p) => { return p == null ? false : true; }, (p) => _selectedBenhNhan = p.SelectedItem as BenhNhan);
+
+
+
             //itemsource for listview
             ListbenhNhans = new ObservableCollection<BenhNhan>();
 

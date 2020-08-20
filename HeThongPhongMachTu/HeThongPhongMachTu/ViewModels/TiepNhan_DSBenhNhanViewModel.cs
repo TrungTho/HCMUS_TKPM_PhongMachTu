@@ -49,12 +49,12 @@ namespace HeThongPhongMachTu.ViewModels
                 ListbenhNhans.Add(benhNhan);
             }
 
-            //disable button edit
+            //disable button PhieuKhamMoi before any listview item is selected
             DisableEditButtonCommand = new RelayCommand<NavigationButton>((p) => { return p == null ? false : true; }, (p) => p.IsEnabled=false);
+            //enable button PhieuKhamMoi after any listview item is selected
             EnableEditButtonCommand = new RelayCommand<NavigationButton>((p) => { return p == null ? false : true; }, (p) => p.IsEnabled=true);
+            //update listview selected item to sending if user want to choose
             UpdateSelectedBenhNhan = new RelayCommand<ListView>((p) => { return p == null ? false : true; }, (p) => _selectedBenhNhan=p.SelectedItem as BenhNhan);
-
-
         }
 
     }

@@ -13,6 +13,7 @@
     <viewmodel:KhamBenhViewModel x:Key="KhamBenhVM"></viewmodel:KhamBenhViewModel>
     <viewmodel:KhamBenh_ChoKhamViewModel x:Key="KhamBenh_ChoKhamVM"></viewmodel:KhamBenh_ChoKhamViewModel>
     <viewmodel:KhamBenh_DaKhamViewModel x:Key="KhamBenh_DaKhamVM"></viewmodel:KhamBenh_DaKhamViewModel>
+    <viewmodel:KhamBenh_PhieuKhamMoiViewModel x:Key="KhamBenh_PKMoiVM"></viewmodel:KhamBenh_PhieuKhamMoiViewModel>
     <viewmodel:ThanhToanViewModel x:Key="ThanhToanVM"></viewmodel:ThanhToanViewModel>
     <viewmodel:ThanhToan_ChoThanhToanViewModel x:Key="ThanhToan_ChoTTVM"></viewmodel:ThanhToan_ChoThanhToanViewModel>
     <viewmodel:ThanhToan_DaThanhToanViewModel x:Key="ThanhToan_DaTTVM"></viewmodel:ThanhToan_DaThanhToanViewModel>
