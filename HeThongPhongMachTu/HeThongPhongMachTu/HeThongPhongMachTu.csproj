@@ -94,6 +94,7 @@
     <Compile Include="ViewModels\KhamBenh_ChoKhamViewModel.cs" />
     <Compile Include="ViewModels\KhamBenh_DaKhamViewModel.cs" />
     <Compile Include="ViewModels\KhamBenh_PhieuKhamMoiViewModel.cs" />
+    <Compile Include="ViewModels\NhaThuoc_ChiTietThuocViewModel.cs" />
     <Compile Include="ViewModels\NhaThuoc_ChoNhanThuocViewModel.cs" />
     <Compile Include="ViewModels\NhaThuoc_NhapThuocViewModel.cs" />
     <Compile Include="ViewModels\NhaThuoc_ThuocTrongKhoViewModel.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="ViewModels\QuanLy_PhieuThuChiViewModel.cs" />
     <Compile Include="ViewModels\QuanLy_ThongKeViewModel.cs" />
     <Compile Include="ViewModels\ThanhToanViewModel.cs" />
+    <Compile Include="ViewModels\ThanhToan_ChiTietHDViewModel.cs" />
     <Compile Include="ViewModels\ThanhToan_ChoThanhToanViewModel.cs" />
     <Compile Include="ViewModels\ThanhToan_DaThanhToanViewModel.cs" />
     <Compile Include="ViewModels\TiepNhanViewModel.cs" />
@@ -125,6 +127,9 @@
     </Compile>
     <Compile Include="Views\ucNhaThuoc.xaml.cs">
       <DependentUpon>ucNhaThuoc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucNhaThuoc_ChiTietThuoc.xaml.cs">
+      <DependentUpon>ucNhaThuoc_ChiTietThuoc.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ucNhaThuoc_ChoNhanThuoc.xaml.cs">
       <DependentUpon>ucNhaThuoc_ChoNhanThuoc.xaml</DependentUpon>
@@ -152,6 +157,9 @@
     </Compile>
     <Compile Include="Views\ucThanhToan.xaml.cs">
       <DependentUpon>ucThanhToan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucThanhToan_ChiTietHD.xaml.cs">
+      <DependentUpon>ucThanhToan_ChiTietHD.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ucThanhToan_ChoThanhToan.xaml.cs">
       <DependentUpon>ucThanhToan_ChoThanhToan.xaml</DependentUpon>
@@ -296,6 +304,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\ucNhaThuoc_ChiTietThuoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ucNhaThuoc_ChoNhanThuoc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -329,6 +341,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ucThanhToan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucThanhToan_ChiTietHD.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

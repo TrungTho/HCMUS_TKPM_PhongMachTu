@@ -6,8 +6,15 @@
              xmlns:local="clr-namespace:HeThongPhongMachTu.Views"
              xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
              mc:Ignorable="d" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              d:DesignHeight="450" d:DesignWidth="800"
              DataContext="{StaticResource NhaThuoc_ChoNhanThuocVM}">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding DisableCTHDButtonCommand}"
+                        CommandParameter="{Binding ElementName=buttonXacNhanThanhToan}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
     <UserControl.Resources>
         <Style TargetType="Image">
             <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
@@ -114,6 +121,12 @@
                                   ItemsSource="{Binding ListHoaDon, UpdateSourceTrigger=PropertyChanged}"
                                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                               HorizontalContentAlignment="Center">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="MouseUp">
+                                    <i:InvokeCommandAction Command="{Binding EnableCTHDButtonCommand}"
+                                                               CommandParameter="{Binding ElementName=buttonXacNhanThanhToan}"/>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
                             <ListView.Resources>
                                 <Style TargetType="{x:Type GridViewColumnHeader}">
                                     <Setter Property="HorizontalContentAlignment" Value="Center" />
@@ -142,9 +155,15 @@
         <Grid Grid.Row="1" Background="#6A6868" Margin="0">
             <DockPanel LastChildFill="False" HorizontalAlignment="Center">
 
-                <Button Name="buttonXacNhanGiaoThuoc"
+                <dxwui:NavigationButton Name="buttonXacNhanThanhToan"
                     Background="Transparent" BorderThickness="0"
                         Margin="0" Width="auto" Height="auto">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction Command="{Binding UpdateSelectedBenhNhan}"
+                                                               CommandParameter="{Binding ElementName=listViewChoNhanThuoc}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition/>
@@ -153,17 +172,17 @@
 
                         <Grid Grid.Row="0">
                             <Image HorizontalAlignment="Center"
-                                Source="../Images/confirmicon_white.PNG" Width="50" />
+                                Source="../Images/invoice_white.PNG" Width="50" />
                         </Grid>
 
                         <Grid Grid.Row="1">
-                            <Label Content="Xác nhận" HorizontalAlignment="Center"
+                            <Label Content="Chi tiết" HorizontalAlignment="Center"
                                    Foreground="White"
                                        FontWeight="Normal"/>
                         </Grid>
                     </Grid>
 
-                </Button>
+                </dxwui:NavigationButton>
 
             </DockPanel>
 

@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace HeThongPhongMachTu.ViewModels
 {
@@ -14,7 +15,16 @@ namespace HeThongPhongMachTu.ViewModels
 
         public ObservableCollection<HoaDon> ListHoaDon { get => _listHoaDon; set { _listHoaDon = value; OnPropertyChanged(); } }
 
+        public ICommand UpdateDataToListViewCommand { get; set; }
+
         public ThanhToan_DaThanhToanViewModel()
+        {
+            UpdateDataToListViewCommand = new RelayCommand<object>((p) => { return true; }, (p) => UpdateDataToListView(p));
+
+           
+        }
+
+        private void UpdateDataToListView(object p)
         {
             //itemsource for listview
             ListHoaDon = new ObservableCollection<HoaDon>();

@@ -17,9 +17,11 @@
     <viewmodel:ThanhToanViewModel x:Key="ThanhToanVM"></viewmodel:ThanhToanViewModel>
     <viewmodel:ThanhToan_ChoThanhToanViewModel x:Key="ThanhToan_ChoTTVM"></viewmodel:ThanhToan_ChoThanhToanViewModel>
     <viewmodel:ThanhToan_DaThanhToanViewModel x:Key="ThanhToan_DaTTVM"></viewmodel:ThanhToan_DaThanhToanViewModel>
+    <viewmodel:ThanhToan_ChiTietHDViewModel x:Key="ThanhToan_CTHoaDonVM"></viewmodel:ThanhToan_ChiTietHDViewModel>
     <viewmodel:NhaThuoc_ChoNhanThuocViewModel x:Key="NhaThuoc_ChoNhanThuocVM"></viewmodel:NhaThuoc_ChoNhanThuocViewModel>
     <viewmodel:NhaThuoc_ThuocTrongKhoViewModel x:Key="NhaThuoc_ThuocTrongKhoVM"></viewmodel:NhaThuoc_ThuocTrongKhoViewModel>
     <viewmodel:NhaThuoc_NhapThuocViewModel x:Key="NhaThuoc_NhapThuocVM"></viewmodel:NhaThuoc_NhapThuocViewModel>
+    <viewmodel:NhaThuoc_ChiTietThuocViewModel x:Key="NhaThuoc_CTThuocVM"></viewmodel:NhaThuoc_ChiTietThuocViewModel>
     <viewmodel:QuanLy_NhanVienViewModel x:Key="QuanLy_NhanVienVM"></viewmodel:QuanLy_NhanVienViewModel>
     <viewmodel:QuanLy_PhieuThuChiViewModel x:Key="QuanLy_PhieuThuChiVM"></viewmodel:QuanLy_PhieuThuChiViewModel>
     <viewmodel:QuanLy_ThongKeViewModel x:Key="QuanLy_ThongKeVM"></viewmodel:QuanLy_ThongKeViewModel>
