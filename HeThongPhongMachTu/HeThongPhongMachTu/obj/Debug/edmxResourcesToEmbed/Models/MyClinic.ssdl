@@ -295,7 +295,7 @@
         <PropertyRef Name="MaNV" />
       </Principal>
       <Dependent Role="PhieuKham">
-        <PropertyRef Name="MaBN" />
+        <PropertyRef Name="MaNV" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

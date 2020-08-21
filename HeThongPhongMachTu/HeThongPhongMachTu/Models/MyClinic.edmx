@@ -300,7 +300,7 @@
               <PropertyRef Name="MaNV" />
             </Principal>
             <Dependent Role="PhieuKham">
-              <PropertyRef Name="MaBN" />
+              <PropertyRef Name="MaNV" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -570,6 +570,7 @@
           <NavigationProperty Name="PhieuKhams" Relationship="Self.FK_PhieuKham_NhanVien" FromRole="NhanVien" ToRole="PhieuKham" />
           <NavigationProperty Name="PhieuNhapThuocs" Relationship="Self.FK_PhieuNhapThuoc_NhanVien" FromRole="NhanVien" ToRole="PhieuNhapThuoc" />
           <NavigationProperty Name="PhieuThuChis" Relationship="Self.FK_PhieuThuChi_NhanVien" FromRole="NhanVien" ToRole="PhieuThuChi" />
+          <NavigationProperty Name="PhieuKhams1" Relationship="MyClinicModel.FK_PhieuKham_NhanVien1" FromRole="NhanVien" ToRole="PhieuKham" />
         </EntityType>
         <EntityType Name="PhieuKham">
           <Key>
@@ -583,6 +584,7 @@
           <NavigationProperty Name="ChiDinhDungThuocs" Relationship="Self.FK_ChiDinhDungThuoc_PhieuKham" FromRole="PhieuKham" ToRole="ChiDinhDungThuoc" />
           <NavigationProperty Name="NhanVien" Relationship="Self.FK_PhieuKham_NhanVien" FromRole="PhieuKham" ToRole="NhanVien" />
           <NavigationProperty Name="SoKhamBenh" Relationship="Self.FK_PhieuKham_BenhNhan" FromRole="PhieuKham" ToRole="SoKhamBenh" />
+          <NavigationProperty Name="NhanVien1" Relationship="MyClinicModel.FK_PhieuKham_NhanVien1" FromRole="PhieuKham" ToRole="NhanVien" />
         </EntityType>
         <EntityType Name="PhieuNhapThuoc">
           <Key>
@@ -912,7 +914,23 @@
             <End Role="Thuoc" EntitySet="Thuocs" />
             <End Role="PhieuNhapThuoc" EntitySet="PhieuNhapThuocs" />
           </AssociationSet>
+          <AssociationSet Name="FK_PhieuKham_NhanVien1" Association="MyClinicModel.FK_PhieuKham_NhanVien1">
+            <End Role="NhanVien" EntitySet="NhanViens" />
+            <End Role="PhieuKham" EntitySet="PhieuKhams" />
+          </AssociationSet>
         </EntityContainer>
+        <Association Name="FK_PhieuKham_NhanVien1">
+          <End Type="MyClinicModel.NhanVien" Role="NhanVien" Multiplicity="1" />
+          <End Type="MyClinicModel.PhieuKham" Role="PhieuKham" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NhanVien">
+              <PropertyRef Name="MaNV" />
+            </Principal>
+            <Dependent Role="PhieuKham">
+              <PropertyRef Name="MaNV" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->

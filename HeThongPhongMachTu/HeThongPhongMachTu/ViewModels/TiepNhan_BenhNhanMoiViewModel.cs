@@ -108,7 +108,7 @@ namespace HeThongPhongMachTu.ViewModels
                         cT_DanhSachKham.MaDS = query.MaDS;
                         cT_DanhSachKham.MaBN = TmpBenhNhan.MaBN;
                         cT_DanhSachKham.ThoiGian = DateTime.Now;
-                        cT_DanhSachKham.MaNV = "1";
+                        cT_DanhSachKham.MaNV = "admin";
                         cT_DanhSachKham.TrangThai = true;
 
                         DataProvider.Instance.DB.CT_DanhSachKham.Add(cT_DanhSachKham);

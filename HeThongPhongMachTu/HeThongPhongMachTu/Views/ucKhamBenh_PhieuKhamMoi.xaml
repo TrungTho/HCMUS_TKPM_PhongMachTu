@@ -235,8 +235,8 @@
 
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="Click">
-                            <i:InvokeCommandAction Command="{Binding SaveCommand}"
-                                                   CommandParameter="{Binding ElementName=comboBoxSEX}"/>
+                            <i:InvokeCommandAction Command="{Binding InsertDataToDBCommand}"
+                                                   />
                         </i:EventTrigger>
                     </i:Interaction.Triggers>
 

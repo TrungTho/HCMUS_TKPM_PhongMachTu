@@ -14,7 +14,7 @@
         <EntityTypeShape EntityType="MyClinicModel.HoaDon" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
         <EntityTypeShape EntityType="MyClinicModel.LogHeThong" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
         <EntityTypeShape EntityType="MyClinicModel.NhanVien" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
-        <EntityTypeShape EntityType="MyClinicModel.PhieuKham" Width="1.5" PointX="6" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyClinicModel.PhieuKham" Width="1.5" PointX="6" PointY="7.375" IsExpanded="true" />
         <EntityTypeShape EntityType="MyClinicModel.PhieuNhapThuoc" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
         <EntityTypeShape EntityType="MyClinicModel.PhieuThuChi" Width="1.5" PointX="3" PointY="19.5" IsExpanded="true" />
         <EntityTypeShape EntityType="MyClinicModel.QuyDinh" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
@@ -36,6 +36,7 @@
         <AssociationConnector Association="MyClinicModel.FK_PhieuThuChi_NhanVien" ManuallyRouted="false" />
         <AssociationConnector Association="MyClinicModel.FK_PhieuKham_BenhNhan" ManuallyRouted="false" />
         <AssociationConnector Association="MyClinicModel.FK_PhieuNhapThuoc_Thuoc" ManuallyRouted="false" />
+        <AssociationConnector Association="MyClinicModel.FK_PhieuKham_NhanVien1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

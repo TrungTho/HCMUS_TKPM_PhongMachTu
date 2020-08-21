@@ -30,5 +30,6 @@ namespace HeThongPhongMachTu.Models
         public virtual ICollection<ChiDinhDungThuoc> ChiDinhDungThuocs { get; set; }
         public virtual NhanVien NhanVien { get; set; }
         public virtual SoKhamBenh SoKhamBenh { get; set; }
+        public virtual NhanVien NhanVien1 { get; set; }
     }
 }
