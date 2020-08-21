@@ -156,6 +156,7 @@
             <DockPanel LastChildFill="False" HorizontalAlignment="Center">
 
                 <dxwui:NavigationButton Name="buttonXacNhanThanhToan"
+                                        NavigateTo="ucNhaThuoc_ChiTietThuoc"
                     Background="Transparent" BorderThickness="0"
                         Margin="0" Width="auto" Height="auto">
                     <i:Interaction.Triggers>

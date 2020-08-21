@@ -23,30 +23,38 @@ namespace HeThongPhongMachTu.ViewModels
         public ObservableCollection<BenhNhan> ListBNTrongNgay { get => _listbntrongngay; set { _listbntrongngay = value; OnPropertyChanged(); } }
 
         public ICommand SearchCommand { get; set; }
+        public ICommand LoadDataToListViewCommand { get; set; }
 
         public TiepNhan_DSTrongNgayViewModel()
         {
             SearchCommand = new RelayCommand<TextBox>((p) => { return p==null?false : true; }, (p) =>LoadDataToListView(p));
+            LoadDataToListViewCommand = new RelayCommand<object>((p) => { return true; }, (p) =>LoadDataToListViewNew());
 
+            
+        }
+
+        private void LoadDataToListViewNew()
+        {
             //itemsource for listview
             ListBNTrongNgay = new ObservableCollection<BenhNhan>();
 
-            //select all record in benhnhan
-            var queries = DataProvider.Instance.DB.BenhNhans.ToList();
-
+            var queries = DataProvider.Instance.DB.CT_DanhSachKham.ToList();
+            
             //modify some attribute to show in listview
             int stt = 0;
             foreach (var query in queries)
-            {
-                stt++;
-                BenhNhan benhNhan = new BenhNhan();
-                benhNhan = query;
-                benhNhan.STT = stt;
-                benhNhan.Tuoi = (DateTime.Now.Year - query.NgaySinh.Year).ToString();
-                benhNhan.SEX = query.GioiTinh == true ? "Nam" : "Nữ";
+                if (query.ThoiGian.Date == DateTime.Now.Date)
+                {
 
-                ListBNTrongNgay.Add(benhNhan);
-            }
+                    stt++;
+                    BenhNhan benhNhan = new BenhNhan();
+                    benhNhan = DataProvider.Instance.DB.BenhNhans.Where(x => x.MaBN == query.MaBN) as BenhNhan;
+                    benhNhan.STT = stt;
+                    benhNhan.Tuoi = (DateTime.Now.Year - benhNhan.NgaySinh.Year).ToString();
+                    benhNhan.SEX = benhNhan.GioiTinh == true ? "Nam" : "Nữ";
+
+                    ListBNTrongNgay.Add(benhNhan);
+                }
         }
 
         void LoadDataToListView(TextBox p)
