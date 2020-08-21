@@ -23,11 +23,12 @@ namespace HeThongPhongMachTu.Models
             this.PhieuKhams = new HashSet<PhieuKham>();
             this.PhieuNhapThuocs = new HashSet<PhieuNhapThuoc>();
             this.PhieuThuChis = new HashSet<PhieuThuChi>();
+            this.PhieuKhams1 = new HashSet<PhieuKham>();
         }
+
         public int STT { get; set; }
         public string SEX { get; set; }
         public string Tuoi { get; set; }
-
 
         public string MaNV { get; set; }
         public string HoTen { get; set; }
@@ -55,5 +56,7 @@ namespace HeThongPhongMachTu.Models
         public virtual ICollection<PhieuNhapThuoc> PhieuNhapThuocs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PhieuThuChi> PhieuThuChis { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PhieuKham> PhieuKhams1 { get; set; }
     }
 }
