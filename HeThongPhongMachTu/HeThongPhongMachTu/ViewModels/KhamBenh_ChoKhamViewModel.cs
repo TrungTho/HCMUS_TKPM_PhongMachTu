@@ -27,12 +27,20 @@ namespace HeThongPhongMachTu.ViewModels
         public KhamBenh_ChoKhamViewModel()
         {
             //disable button PhieuKhamMoi before any listview item is selected
-            DisablePKMoiButtonCommand = new RelayCommand<NavigationButton>((p) => { return p == null ? false : true; }, (p) => p.IsEnabled = false);
+            DisablePKMoiButtonCommand = new RelayCommand<NavigationButton>((p) => { return p == null ? false : true; }, (p) => LoadDataToView(p));
             //enable button PhieuKhamMoi after any listview item is selected
             EnablePKMoiButtonCommand = new RelayCommand<NavigationButton>((p) => { return p == null ? false : true; }, (p) => p.IsEnabled = true);
             //update listview selected item to sending if user want to choose
             UpdateSelectedBenhNhan = new RelayCommand<ListView>((p) => { return p == null ? false : true; }, (p) => _selectedBenhNhan = p.SelectedItem as BenhNhan);
 
+
+
+            
+        }
+
+        private void LoadDataToView(NavigationButton p)
+        {
+            p.IsEnabled = false;
 
 
             //itemsource for listview
@@ -56,7 +64,7 @@ namespace HeThongPhongMachTu.ViewModels
 
             foreach (var query2 in queries_2)
             {
-                if (query2.MaDS.ToString() == MaDSK && query2.TrangThai == true) 
+                if (query2.MaDS.ToString() == MaDSK && query2.TrangThai == true)
                 {
                     foreach (var query3 in queries_3)
                         if (query2.MaBN == query3.MaBN)
@@ -72,7 +80,6 @@ namespace HeThongPhongMachTu.ViewModels
                 }
 
             }
-            
         }
     }
 }

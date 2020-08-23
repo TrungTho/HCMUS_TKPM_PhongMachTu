@@ -48,7 +48,7 @@ namespace HeThongPhongMachTu.ViewModels
 
                     stt++;
                     BenhNhan benhNhan = new BenhNhan();
-                    benhNhan = DataProvider.Instance.DB.BenhNhans.Where(x => x.MaBN == query.MaBN) as BenhNhan;
+                    benhNhan = DataProvider.Instance.DB.BenhNhans.Where(x => x.MaBN == query.MaBN).First() as BenhNhan;
                     benhNhan.STT = stt;
                     benhNhan.Tuoi = (DateTime.Now.Year - benhNhan.NgaySinh.Year).ToString();
                     benhNhan.SEX = benhNhan.GioiTinh == true ? "Nam" : "Nữ";
